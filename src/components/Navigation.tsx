@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/navigation.css";
 import WhiteLogo from "../assets/svg/logo-white.svg";
+import ButtonSolid from "./ButtonSolid";
 
 const Navigation = () => {
   const [scrolledPass100, setScrolledPass100] = useState(false);
@@ -61,7 +62,7 @@ const Navigation = () => {
               </div>
             </nav>
             <div className="position-relative">
-              <span className="cs-button-solid">Get started</span>
+              <ButtonSolid />
             </div>
           </div>
         </div>

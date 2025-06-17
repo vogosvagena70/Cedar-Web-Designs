@@ -16,6 +16,7 @@
     color: white;
     background-color: #080c1c;
     padding-top: 24px;
+    z-index: 9999;
 
     transition-property: width,margin-top,align-items,border-radius,height;
     transition-duration: 0.3s;
@@ -33,6 +34,7 @@
     color: white;
     background-color: #080c1c;
     padding-top: 24px;
+    z-index: 9999;
 
     transition-property: width,margin-top,align-items,border-radius,height,padding-top;
     transition-duration: 0.3s;
@@ -46,6 +48,7 @@
     max-width: 90rem;
     gap: 3rem;
     justify-content: space-between;
+    padding-right: 30px;
 }
 
 .cs-ul{
