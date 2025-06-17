@@ -1,0 +1,83 @@
+.HeaderContainer{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.NavContainer{
+    
+
+    position: fixed;
+    border-radius: 1.5rem; 
+    align-items: center;
+    margin-top: 20px;
+    width: 94%;
+    height: 4rem;
+    color: white;
+    background-color: #080c1c;
+    padding-top: 24px;
+
+    transition-property: width,margin-top,align-items,border-radius,height;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.NavContainerFull{
+ 
+
+    position: fixed; 
+    height: 4rem; 
+    width: 100%;
+    margin-top:0;
+    border-radius: 0;
+    color: white;
+    background-color: #080c1c;
+    padding-top: 24px;
+
+    transition-property: width,margin-top,align-items,border-radius,height,padding-top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+  
+.container{
+    display: flex;
+    align-items: center; 
+    margin: auto;
+    max-width: 90rem;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.cs-ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cs-li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+
+}
+
+.ulContainer{
+ 
+}
+
+a{
+    font-weight: 900;
+    font-size:15px;
+}
+
+.cs-button-solid{
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 3.75rem; 
+}
+
+.position-relative{
+    position: relative;
+}
