@@ -1,4 +1,3 @@
-import React from "react";
 import logowhite from "../assets/svg/logo-white.svg";
 
 const Logo = () => {
