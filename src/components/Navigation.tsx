@@ -8,7 +8,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setScrolledPass100(true);
       } else {
         setScrolledPass100(false);
