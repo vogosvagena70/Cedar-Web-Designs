@@ -1,9 +1,14 @@
 import "../styles/ButtonSolid.css";
 
-const ButtonSolid = () => {
+const ButtonSolid = ({ className = "" }) => {
+  if (className === "") {
+    className = "cs-button-solid bg-white";
+  } else {
+    className += " cs-button-solid";
+  }
   return (
     <>
-      <span className="cs-button-solid">Get started</span>
+      <span className={className}>Get started</span>
     </>
   );
 };

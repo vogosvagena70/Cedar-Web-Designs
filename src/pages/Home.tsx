@@ -3,6 +3,57 @@ import ButtonSolid from "../components/ButtonSolid";
 import "../styles/home.css";
 import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.png";
+import mobileIcon from "../assets/images/i1.svg";
+import ServiceBox from "../components/ServiceBox";
+
+const Services1 = [
+  {
+    Title: "Mobile First Design",
+    Body: "We start building your site for mobile devices first making sure the code is as lean and optimized with no bloated waste and makes the site even more responsive.",
+    LinkText: "Get Started",
+    LinkURL: "",
+    SVG: "mobile",
+  },
+  {
+    Title: "Full Responsive",
+    Body: "Your website will fit all mobile screens sizes, tablets, and desktop sizes so visitors can access your site from anywhere and see a beautiful site no matter the screen size.",
+    LinkText: "Get Started",
+    LinkURL: "",
+    SVG: "mobileandlaptop",
+  },
+  {
+    Title: "Optimized Page Speed",
+    Body: "If your site takes more than 3 seconds to load you can lose up to 50% your traffic because it took too long. Our sites load 1 second or less ensuring everyone that visits your site reaches it.",
+    LinkText: "More About Page Speed",
+    LinkURL: "",
+    SVG: "clock",
+  },
+];
+
+const Services2 = [
+  {
+    Title: "SEO Services",
+    Body: "We have an in-house SEO specialist who understands local SEO and how to rank in your local market with plenty of case studies to show results and monthly reports.",
+    LinkText: "More About SEO",
+    LinkURL: "",
+    SVG: "seo",
+  },
+  {
+    Title: "Google PPC Ads",
+    Body: "We also offer Pay-Per-Click Google ads creation and management with our Google Ads expert who can create effective ad campaigns to maximize your ROI.",
+    LinkText: "More About Ads",
+    LinkURL: "",
+    SVG: "ads",
+  },
+  {
+    Title: "Clean & Maintainable Code",
+    Body: "Our websites are built with clean, modular code that's easy to maintain, scale, or hand off — perfect for businesses that care about performance and long-term stability.",
+    LinkText: "See How We Code",
+    LinkURL: "",
+    SVG: "code",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -27,7 +78,7 @@ const Home = () => {
 
               <div className="buttons-container">
                 <div>
-                  <ButtonSolid />
+                  <ButtonSolid className="bg-white color-black" />
                 </div>
                 <div className="color-white">About us</div>
               </div>
@@ -80,9 +131,41 @@ const Home = () => {
                 clients and see them grow over time.
               </div>
             </div>
-
-            <Body />
+            <div className="ListWrapper">
+              <ul className="ListItemContainer">
+                {Services1.map((item) => {
+                  return (
+                    <ServiceBox
+                      Body={item.Body}
+                      LinkText={item.LinkText}
+                      SVG={item.SVG}
+                      Title={item.Title}
+                      URL={item.LinkURL}
+                    />
+                  );
+                })}
+              </ul>
+              <div className="mt-5r"></div>
+              <ul className="ListItemContainer">
+                {Services2.map((item) => {
+                  return (
+                    <ServiceBox
+                      Body={item.Body}
+                      LinkText={item.LinkText}
+                      SVG={item.SVG}
+                      Title={item.Title}
+                      URL={item.LinkURL}
+                    />
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+          <div className="put-center">
+            <ButtonSolid className="bg-primary color-white" />
+          </div>
+
+          <Body />
         </div>
       </section>
     </>

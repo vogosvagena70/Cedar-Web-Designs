@@ -62,7 +62,7 @@ const Navigation = () => {
               </div>
             </nav>
             <div className="position-relative">
-              <ButtonSolid />
+              <ButtonSolid className="bg-white color-black" />
             </div>
           </div>
         </div>

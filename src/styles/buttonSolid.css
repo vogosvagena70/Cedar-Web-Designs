@@ -1,6 +1,22 @@
 .cs-button-solid{
-    background-color: white;
-    color: black;
+    
     padding: 1rem 2rem;
     border-radius: 3.75rem; 
+}
+
+.bg-white{
+    
+    background-color: white;
+}
+
+.bg-primary{
+    
+    background-color: #001f3f;
+}
+
+.color-black{
+    color: black;
+}
+.color-white{
+    color: white;
 }

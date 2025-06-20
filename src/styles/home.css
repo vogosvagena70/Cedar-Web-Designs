@@ -100,6 +100,12 @@ z-index: 2;
     font-weight:1000 ;
 }
 
+.text-medium{
+    line-height: 1.1;
+    font-size: 25px;
+    font-weight:700 ;
+}
+
 .hero-title{
     max-width: 15ch;
     line-height: 1.1;
@@ -140,6 +146,8 @@ z-index: 2;
 
 .ServiceWrapper{
     padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: white;
 }
  
@@ -177,4 +185,239 @@ z-index: 2;
 
 .pt-2{
     padding-top: 20px;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.mt-4{
+    margin-top: 40px;
+}
+
+.mt-4r{
+    margin-top: 4rem;    
+}
+
+.mt-5r{
+    margin-top: 5rem;    
+}
+
+.ServicesBoxes-Container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 4rem; 
+    row-gap: 4rem; 
+    height: fit-content;
+
+    @media (max-width: 777px) {
+        grid-template-columns: repeat(1,1fr);
+        
+margin-left: auto;
+margin-right: auto;
+    } 
+}
+
+.ServiceBox{
+    background-color: #f7f7f7; 
+    max-width: 350px;
+    border-radius: 1rem;
+    block-size: 350px; 
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ServiceBoxHover{
+    background-color: #001f3f; 
+    max-width: 350px;
+    border-radius: 1rem;
+    block-size: 350px; 
+    color: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+
+.ServiceBoxIcon{
+    position: relative;
+    top:-2.5rem;
+    left: 0.75rem;
+    padding: 20px 30px;
+    background-color: #001f3f;
+    max-width: fit-content;
+    border-radius: 1rem;
+    fill: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ServiceBoxIconHover{ 
+    position: relative;
+    top:-2.5rem;
+    left: 0.75rem;
+    padding: 20px 30px;
+    background-color: #43b7ff;
+    max-width: fit-content;
+    border-radius: 1rem;
+    fill: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ServiceBoxIconSVG{
+    fill: white;
+
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.ServiceBoxIconSVGHover{
+    fill: black;
+
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ServiceBoxText{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.ServiceBoxLink{
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.ServiceBoxTitle{
+    max-width: 300px;
+    min-width: 199px;
+    margin:auto;
+}
+ 
+
+.ServicesBoxes-Flex{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+     @media (max-width: 777px) {
+        flex-direction: column;
+     }
+}
+
+.ServicesBoxes-Flex > * {
+    flex: 1;
+}
+
+.ListWrapper{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.ListItemContainer{
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 777px) {
+        flex-direction: column;
+        gap:5rem
+     }
+}
+
+.ListItemContainer > *{
+    list-style:none ; 
+    flex: 1;
+}
+
+.ItemLogo{
+    position: relative;
+    top:-2.5rem;
+    left: 2rem;
+    padding: 20px 30px;
+    background-color: #001f3f;
+    max-width: fit-content;
+    border-radius: 1rem;
+}
+
+.ItemLogo > svg{    
+    fill: white;
+}
+
+.ItemLogoHover{
+    position: relative;
+    top:-2.5rem;
+    left: 2rem;
+    padding: 20px 30px;
+    background-color: #43b7ff;
+    max-width: fit-content;
+    border-radius: 1rem;
+}
+
+.ItemLogoHover > svg{    
+    fill: black;
+}
+
+.Item{
+    background-color: #f7f7f7; 
+    border-radius: 1rem;
+    block-size: 350px;  
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+     
+}
+
+.ItemHover{
+    background-color: #f7f7f7; 
+    border-radius: 1rem;
+    block-size: 350px;  
+    background-color: #001f3f;
+    color: white;
+
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+     
+}
+
+.InnerItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 777px) {
+        padding-bottom: 40px;
+    }
+}
+
+.put-center{
+    display: flex;
+    justify-content: center;
 }
