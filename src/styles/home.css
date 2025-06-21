@@ -211,6 +211,10 @@ z-index: 2;
     margin-top: 5rem;    
 }
 
+.mt-10r{
+    margin-top: 10rem;    
+}
+
 .ServicesBoxes-Container{
     margin-top: 100px;
     display: grid;
@@ -420,4 +424,86 @@ margin-right: auto;
 .put-center{
     display: flex;
     justify-content: center;
+}
+
+.WhatWeOfferContainer{
+    display: flex;
+    gap: 2rem;
+}
+
+.WhatWeOfferWrapper{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.WhatWeOfferTextContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.OfferList > li {
+    list-style: none;
+}
+
+.OfferList{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+}
+
+.OfferItemTitle{ 
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.WhatWeOfferImageContainer{
+position: relative;
+}
+
+.BasselItaniBadge{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    bottom: 20px;
+    left:20px; 
+}
+
+.BasselItaniBadgeTitle{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.BadgeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.BadgeImg{
+    height: 100%;
+    object-fit: cover;
+}
+
+.WhatWeOfferTopper{
+    color: #707070;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+
+}
+ 
+.WhatWeOfferTitle{
+    font-weight: 900;
+    font-size: 3rem;
+    max-width: 23ch;
+    line-height: 1em;
+}
+
+.OfferDescription{
+    margin-top: 10px;
+    max-width: 33ch;
 }

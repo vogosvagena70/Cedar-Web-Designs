@@ -4,6 +4,8 @@ import "../styles/home.css";
 import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.png";
 import mobileIcon from "../assets/images/i1.svg";
+import basselItani from "../assets/images/bassel-itani.jpeg";
+import check from "../assets/images/check.png";
 import ServiceBox from "../components/ServiceBox";
 
 const Services1 = [
@@ -164,10 +166,110 @@ const Home = () => {
           <div className="put-center">
             <ButtonSolid className="bg-primary color-white" />
           </div>
-
-          <Body />
         </div>
       </section>
+
+      <section>
+        <div className="WhatWeOfferWrapper mt-10r">
+          <div className="WhatWeOfferContainer">
+            <div className="WhatWeOfferTextContainer">
+              <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
+              <div className="WhatWeOfferTitle">
+                Websites Starting At $0 Down And $125 Per Month
+              </div>
+              <div className="mt-2">
+                We offer $0 down for a standard 5 page small business website.
+                If you need more than that then we have to do custom pricing
+                based on the scope of work, number of additional pages, and time
+                involved. <strong>12 month minimum contract</strong>. Includes
+                design, development, hosting, unlimited edits, 24/7 support, and
+                lifetime updates.
+              </div>
+              <ul className="OfferList mt-4">
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>100% Secure</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    Our sites are pure static HTML and CSS, with nothing
+                    hackable.
+                  </div>
+                </li>
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>Designed From The Ground Up</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    Our designs are done in-house, giving us complete control.
+                  </div>
+                </li>
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>100% Speed Score</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    Purpose-built with zero excess, our sites hit top marks on
+                    Google speed: 98–100.
+                  </div>
+                </li>
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>Money Back Gurantee</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    Don’t love the design? You get your money back and we cancel
+                    the contract.
+                  </div>
+                </li>
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>24/7 Support</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    Call or text anytime. You get straight to me — the owner and
+                    developer.
+                  </div>
+                </li>
+                <li className="OfferItem">
+                  <div className="OfferItemTitle">
+                    <img src={check} height={24} width={24}></img>
+                    <h3>SEO Is What We Do</h3>
+                  </div>
+                  <div className="OfferDescription">
+                    No gimmicks, no BS — just clear SEO explained and real
+                    strategies to boost your rank.
+                  </div>
+                </li>
+              </ul>
+              <div className="mt-4">
+                <ButtonSolid className="bg-primary color-white" />
+              </div>
+            </div>
+            <div className="WhatWeOfferImageContainer">
+              <img
+                className="BadgeImg"
+                src={basselItani}
+                width={650}
+                height={878}
+              ></img>
+              <div className="BasselItaniBadge">
+                <div className="BadgeText">
+                  <span className="BasselItaniBadgeTitle">BASSEL ITANI</span>
+                  <span>Owner, Developer</span>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Body />
     </>
   );
 };
