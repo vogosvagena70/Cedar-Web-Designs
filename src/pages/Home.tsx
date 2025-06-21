@@ -172,12 +172,12 @@ const Home = () => {
       <section>
         <div className="WhatWeOfferWrapper mt-10r">
           <div className="WhatWeOfferContainer">
-            <div className="WhatWeOfferTextContainer">
+            <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
               <div className="WhatWeOfferTitle">
                 Websites Starting At $0 Down And $125 Per Month
               </div>
-              <div className="mt-2">
+              <div className="mt-2 WhatWeOfferDescription">
                 We offer $0 down for a standard 5 page small business website.
                 If you need more than that then we have to do custom pricing
                 based on the scope of work, number of additional pages, and time

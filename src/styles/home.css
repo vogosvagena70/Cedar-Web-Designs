@@ -429,11 +429,21 @@ margin-right: auto;
 .WhatWeOfferContainer{
     display: flex;
     gap: 2rem;
+
+    @media (max-width: 1100px) {
+        flex-direction:  column-reverse;
+    }
 }
 
 .WhatWeOfferWrapper{
     padding-left: 50px;
     padding-right: 50px;
+
+    @media (max-width: 750px) {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
 }
 
 .WhatWeOfferTextContainer{
@@ -449,11 +459,17 @@ margin-right: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2.5rem;
+
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .OfferItemTitle{ 
     display: flex;
     gap: 0.5rem;
+
+    
 }
 
 
@@ -487,6 +503,9 @@ position: relative;
 .BadgeImg{
     height: 100%;
     object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+    
 }
 
 .WhatWeOfferTopper{
@@ -501,9 +520,24 @@ position: relative;
     font-size: 3rem;
     max-width: 23ch;
     line-height: 1em;
+
+    @media (max-width: 750px) {
+        font-size: 2rem;
+        
+    }
 }
 
 .OfferDescription{
     margin-top: 10px;
     max-width: 33ch;
+
+    @media (max-width: 450px) {
+        max-width: 40ch;
+    }
+}
+
+.WhatWeOfferDescription{
+    @media (max-width: 450px) {
+        text-align: left;
+    }
 }
