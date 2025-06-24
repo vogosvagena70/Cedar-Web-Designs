@@ -7,7 +7,11 @@ import mobileIcon from "../assets/images/i1.svg";
 import basselItani from "../assets/images/bassel-itani.jpeg";
 import check from "../assets/images/check.png";
 import ServiceBox from "../components/ServiceBox";
-
+import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.png";
+import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.png";
+import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.png";
+import blueCheck from "../assets/icons/blue-check.png";
+import forbidden from "../assets/icons/forbidden.png";
 const Services1 = [
   {
     Title: "Mobile First Design",
@@ -268,7 +272,340 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section id="Portfolio">
+        <div className="PortfolioWrapper">
+          <div className="PortfolioContainer">
+            <div className="PortfolioDescriptionContainer">
+              <div className="PortfolioDescriptionLeft">
+                <span className="Topper">PORTFOLIO</span>
+                <h2 className="text-large">SOME OF THE WORK WE'VE DONE</h2>
+              </div>
+              <div className="PortfolioDescriptionRight">
+                <span>
+                  We have worked with clients all over the US and Canada for
+                  home services contractors, restaurants, consulting agencies,
+                  start ups, dermatologists, doctors, accountants, and more. No
+                  matter what your business is, we can build a website that is
+                  effective, beautiful, performant, and tailored to your
+                  industry.
+                </span>
+              </div>
+            </div>
+            <div className="PortfolioListContainer">
+              <ul className="PortfolioList">
+                <li className="PortfolioItem">
+                  <div className="PortfolioItemContainer">
+                    <img
+                      className="PortfolioItemImg"
+                      src={NakhalLaptop}
+                      height={270}
+                      width={413}
+                    ></img>
+                    <div className="PortfolioItemDescriptionContainer">
+                      <h2>Sentient Consulting</h2>
+                      <span>
+                        Sentient Consulting provides easy invoicing and
+                        accounting solutions in the EU.
+                      </span>
+                      <div className="mt-4">
+                        <ButtonSolid className="bg-primary color-white" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="PortfolioItem">
+                  <div className="PortfolioItemContainer">
+                    <img
+                      className="PortfolioItemImg"
+                      src={SkyjunxionLaptopMobile}
+                      height={270}
+                      width={413}
+                    ></img>
+                    <div className="PortfolioItemDescriptionContainer">
+                      <h2>Sentient</h2>
+                      <span>
+                        Sentient provides easy invoicing and accounting
+                        solutions in the EU.
+                      </span>
+                      <div className="mt-4">
+                        <ButtonSolid className="bg-primary color-white" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="PortfolioItem">
+                  <div className="PortfolioItemContainer">
+                    <img
+                      className="PortfolioItemImg"
+                      src={SentientLaptopMobile}
+                      height={270}
+                      width={413}
+                    ></img>
+                    <div className="PortfolioItemDescriptionContainer">
+                      <h2>Sentient</h2>
+                      <span>
+                        Sentient provides easy invoicing and accounting
+                        solutions in the EU.
+                      </span>
+                      <div className="mt-4">
+                        <ButtonSolid className="bg-primary color-white" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="Pricing-filler"></div>
+      <section id="pricing">
+        <div className="PricingWrapper">
+          <div className="PricingContainer">
+            <div className="PricingHeader">
+              <div className="PricingTitle">
+                <div className="Topper">OUR PRICING</div>
+                <h1 className="PricingTitleTitle">
+                  PRICING PACKAGE FOR EVERY BUDGET
+                </h1>
+              </div>
+            </div>
+            <div className="PricingList">
+              <div className="PricingItem">
+                <h1 className="PricingItemTitle">LUMP SUM</h1>
+                <ul className="PricingFeaturesList">
+                  <li className="PricingFeature">
+                    Design And Development
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    $25/mo Hosting
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    $100 Fee Per Page After 5
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    +$50/mo Unlimited edits Add-on
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    +$250 To Add A Blog
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    24/7 Support
+                    <img
+                      className="float-right"
+                      src={forbidden}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    Lifetime Updates
+                    <img
+                      className="float-right"
+                      src={forbidden}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                </ul>
 
+                <div className="PricingItemPrice">
+                  <span className="PIPTitle">
+                    $3800<span className="PIPDuration">+$25/mo Hosting</span>
+                  </span>
+                </div>
+                <div className="pb-5">
+                  <ButtonSolid className="bg-primary color-white" />
+                </div>
+              </div>
+              <div className="PricingItem bg-color-darkblue color-white">
+                <h1 className="PricingItemTitle">MONTHLY</h1>
+                <ul className="PricingFeaturesList">
+                  <li className="PricingFeature">
+                    Design And Development
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    Includes Hosting
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    $100 Fee Per Page After 5
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    Unlimited Edits
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    +$250 To Add A Blog
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    24/7 Support
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    Lifetime Updates
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                </ul>
+
+                <div className="PricingItemPrice">
+                  <span className="PIPTitle">
+                    $175<span className="PIPDuration">Per Month</span>
+                  </span>
+                </div>
+                <div className="pb-5">
+                  <ButtonSolid className="bg-white color-black" />
+                </div>
+              </div>
+              <div className="PricingItem">
+                <h1 className="PricingItemTitle">Ecommerce</h1>
+                <ul className="PricingFeaturesList">
+                  <li className="PricingFeature">
+                    Design And Development
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    $25/mo Hosting
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    $100 Fee Per Page After 5
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    +$50/mo Unlimited edits Add-on
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    +$250 To Add A Blog
+                    <img
+                      className="float-right"
+                      src={blueCheck}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    24/7 Support
+                    <img
+                      className="float-right"
+                      src={forbidden}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                  <li className="PricingFeature">
+                    Lifetime Updates
+                    <img
+                      className="float-right"
+                      src={forbidden}
+                      height={18}
+                      width={18}
+                    ></img>
+                  </li>
+                </ul>
+
+                <div className="PricingItemPrice">
+                  <span className="PIPTitle">
+                    $8k<span className="PIPDuration">Starting</span>
+                  </span>
+                </div>
+                <div className="pb-5">
+                  <ButtonSolid className="bg-primary color-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Body />
     </>
   );

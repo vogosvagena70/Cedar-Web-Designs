@@ -187,6 +187,10 @@ z-index: 2;
     padding-top: 20px;
 }
 
+.pb-5{
+    padding-bottom: 50px !important;
+}
+
 .mt-1{
     margin-top: 10px;
 }
@@ -540,4 +544,175 @@ position: relative;
     @media (max-width: 450px) {
         text-align: left;
     }
+}
+
+
+.PortfolioWrapper{
+    background-color: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 5rem;
+}
+
+.Topper{
+    color: #707070;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.PortfolioDescriptionContainer{
+    display: flex;
+
+     @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.PortfolioDescriptionContainer > * {
+    width: 100%;
+}
+
+.PortfolioDescriptionRight{
+    border-left: 1px solid;
+    padding-left: 20px;
+    margin:auto;
+
+    @media (max-width: 700px) {
+        border-left:none;
+        padding-left: 0px;
+        border-bottom:1px solid;
+        padding-bottom: 20px;
+    }
+}
+
+.PortfolioList > * {
+    list-style: none;
+}
+
+.PortfolioList{
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        padding-top: -50px;
+        flex-direction: column;
+
+    }
+}
+
+.PortfolioItemImg{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.PortfolioItemContainer{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.PortfolioItemDescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.PricingWrapper{
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 100px; 
+}
+
+.PricingContainer{
+    
+}
+
+.PricingTitleTitle{
+    font-size: 3rem;
+    max-width: 20ch;
+    line-height: 1;
+}
+
+.PricingList{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; 
+    width: 100%;
+    flex-wrap: nowrap; 
+    @media (max-width: 1269px) {
+        flex-direction: column;
+
+    }
+}
+
+.PricingList > * {
+    flex: 1 1 auto;
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    margin: auto;
+    
+}
+
+.PricingItem{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.PricingItem > *:not(ul) {
+    padding: 25px 25px 25px 25px;
+}
+
+.PricingFeaturesList > * {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bg-color-darkblue{
+    background-color: #001f3f;
+}
+
+.PricingItemTitle{
+    font-size: clamp(1.5rem,3vw,2.25rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.PricingFeaturesList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.PricingItemPrice{ 
+}
+
+.PIPTitle{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.PIPDuration{
+    font-size: clamp(0.87rem,1.5vw,1rem);
+    font-weight: initial;
+    padding-left: 10px;
+}
+
+.PricingItem{
+    width: 100%;
+    width: min(500px,100%)
+}
+
+.float-right{
+    float:right;
+}
+
+.PricingFeature{
+    font-size: clamp(0.87rem,1.5vw,1rem);
 }
