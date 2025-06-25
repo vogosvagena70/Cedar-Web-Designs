@@ -62,7 +62,7 @@ const Services2 = [
 const Home = () => {
   return (
     <>
-      <section className="HeroSection">
+      <section className="HeroSection" id="HeroSection">
         <div className="Hero-filler"></div>
         <div className="Hero-wrapper">
           <div className="Hero-container">
@@ -115,7 +115,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="ServicesSection">
+      <section className="AboutUsSection" id="AboutUs">
         <div className="ServiceWrapper">
           <div className="ServicesContainer">
             <div className="ServiceDescriptionContainer">
@@ -172,7 +172,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section id="Services">
         <div className="WhatWeOfferWrapper mt-10r">
           <div className="WhatWeOfferContainer">
             <div className="WhatWeOfferTextContainer ">
@@ -301,10 +301,10 @@ const Home = () => {
                       width={413}
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
-                      <h2>Sentient Consulting</h2>
+                      <h2>Nakhal</h2>
                       <span>
-                        Sentient Consulting provides easy invoicing and
-                        accounting solutions in the EU.
+                        Nakhal is the largest travel agency company in Lebanon
+                        for over 65 years.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid className="bg-primary color-white" />
@@ -321,10 +321,10 @@ const Home = () => {
                       width={413}
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
-                      <h2>Sentient</h2>
+                      <h2>Skyjunxion</h2>
                       <span>
-                        Sentient provides easy invoicing and accounting
-                        solutions in the EU.
+                        Skyjunxion is the leading agency in B2B solutions for
+                        travel.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid className="bg-primary color-white" />
@@ -343,8 +343,8 @@ const Home = () => {
                     <div className="PortfolioItemDescriptionContainer">
                       <h2>Sentient</h2>
                       <span>
-                        Sentient provides easy invoicing and accounting
-                        solutions in the EU.
+                        For Sentient, we had a much larger scope of work where
+                        we built them an invoice system.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid className="bg-primary color-white" />

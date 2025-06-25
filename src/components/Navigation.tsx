@@ -41,19 +41,19 @@ const Navigation = () => {
               <div className="ulContainer">
                 <ul className="cs-ul">
                   <li className="cs-li">
-                    <a>Home</a>
+                    <a href="#HeroSection">Home</a>
                   </li>
                   <li className="cs-li">
-                    <a>About us</a>
+                    <a href="#AboutUs">About us</a>
                   </li>
                   <li className="cs-li">
-                    <a>Services</a>
+                    <a href="#Services">Services</a>
                   </li>
                   <li className="cs-li">
-                    <a>Pricing</a>
+                    <a href="#Portfolio">Our Work</a>
                   </li>
                   <li className="cs-li">
-                    <a>Blog</a>
+                    <a href="#pricing">Pricing</a>
                   </li>
                   <li className="cs-li">
                     <a>Contact</a>

@@ -82,3 +82,8 @@ a{
 .position-relative{
     position: relative;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
