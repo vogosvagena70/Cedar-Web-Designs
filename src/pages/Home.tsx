@@ -1,9 +1,7 @@
-import Body from "../components/Body";
 import ButtonSolid from "../components/ButtonSolid";
 import "../styles/home.css";
 import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.png";
-import mobileIcon from "../assets/images/i1.svg";
 import basselItani from "../assets/images/bassel-itani.jpeg";
 import Chezka from "../assets/images/chezka.jpeg";
 import check from "../assets/images/check.png";

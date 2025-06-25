@@ -1,11 +1,10 @@
 import { useState } from "react";
-import WhiteLogo from "../assets/svg/logo-white.svg";
 const ServiceBox = ({
   Title = "",
   Body = "",
   LinkText = "",
-  URL = "",
   SVG = "",
+  URL = "",
 }) => {
   const [Hovered, setHovered] = useState(false);
   return (
@@ -34,6 +33,7 @@ const ServiceBox = ({
           <div className="text-medium">{Title}</div>
           <div className="">{Body}</div>
           <div className="">{LinkText}</div>
+          <p className={URL}></p>
         </div>
       </li>
 
@@ -177,7 +177,7 @@ const CodeSVG = () => {
   );
 };
 
-const WhiteLogoSVG = () => {
-  return <img src={WhiteLogo} width="41" height="40"></img>;
-};
+// const WhiteLogoSVG = () => {
+//   return <img src={WhiteLogo} width="41" height="40"></img>;
+// };
 export default ServiceBox;
