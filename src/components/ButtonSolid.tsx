@@ -8,7 +8,7 @@ const ButtonSolid = ({ className = "" }) => {
   }
   return (
     <>
-      <span className={className}>Get started</span>
+      <span className={className}>Get startedd</span>
     </>
   );
 };
