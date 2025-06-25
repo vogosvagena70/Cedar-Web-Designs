@@ -96,7 +96,7 @@ z-index: 2;
 
 .text-large{
     line-height: 1.1;
-    font-size: 45px;
+    font-size: clamp(1.5rem,3vw,2.5rem);
     font-weight:1000 ;
 }
 
@@ -205,6 +205,10 @@ z-index: 2;
 
 .mt-4{
     margin-top: 40px;
+}
+
+.mt-10{
+    margin-top: 100px;
 }
 
 .mt-4r{
@@ -521,14 +525,10 @@ position: relative;
  
 .WhatWeOfferTitle{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: clamp(1.5rem,3vw,2.5rem);
     max-width: 23ch;
     line-height: 1em;
-
-    @media (max-width: 750px) {
-        font-size: 2rem;
-        
-    }
+ 
 }
 
 .OfferDescription{
@@ -632,7 +632,7 @@ position: relative;
 }
 
 .PricingTitleTitle{
-    font-size: 3rem;
+    font-size: clamp(1.5rem,3vw,2.5rem);
     max-width: 20ch;
     line-height: 1;
 }
@@ -715,4 +715,93 @@ position: relative;
 
 .PricingFeature{
     font-size: clamp(0.87rem,1.5vw,1rem);
+}
+
+.ReviewsWrapper{
+    padding-left: 25px;
+    padding-right: 25px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: 1000px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.Title{
+    font-size: clamp(2rem,5vw,3rem);
+    line-height: 1;
+    max-width: 20ch;
+}
+
+.ReviewsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+}
+
+.ReviewsFlex{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    gap: 2rem;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+.ReviewReview{  
+    @media (max-width: 1000px) {
+         
+        
+    }
+}
+
+.Reviewer{
+    @media (max-width: 1000px) {
+         
+        
+    }
+}
+
+.ReviewItem{
+    background-color: #f7f7f7;
+    width: min(500px,100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    text-align: center; 
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    @media (max-width: 1000px) {
+        padding-top: 150px;
+        width:100%;
+
+    }
+}
+
+.ReviewImg{
+    border-radius: 50%;
+    object-fit: cover;   
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top:-3rem;
+    height: min(150px,100%);
+    width: min(150px,100%);
+}
+
+.ReviewTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

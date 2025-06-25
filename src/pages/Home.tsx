@@ -5,6 +5,7 @@ import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.png";
 import mobileIcon from "../assets/images/i1.svg";
 import basselItani from "../assets/images/bassel-itani.jpeg";
+import Chezka from "../assets/images/chezka.jpeg";
 import check from "../assets/images/check.png";
 import ServiceBox from "../components/ServiceBox";
 import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.png";
@@ -606,7 +607,69 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Body />
+      <section id="testimonials">
+        <div className="ReviewsWrapper">
+          <div className="ReviewsContainer">
+            <div className="ReviewsDescription">
+              <span className="Topper">Testimonials</span>
+              <h1 className="PricingTitleTitle">
+                Trusted Web Designer Across The Country
+              </h1>
+            </div>
+            <div className="ReviewsFlex">
+              <div className="ReviewItem">
+                <img
+                  className="ReviewImg"
+                  src={basselItani}
+                  width={150}
+                  height={150}
+                ></img>
+                <div className="ReviewTextContainer">
+                  <span className="ReviewReview  ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
+                    ipsam.
+                  </span>
+
+                  <h1 className="Reviewer">Bassel Itani</h1>
+                </div>
+              </div>
+              <div className="ReviewItem">
+                <img
+                  className="ReviewImg"
+                  src={Chezka}
+                  width={150}
+                  height={150}
+                ></img>
+                <div className="ReviewTextContainer">
+                  <span className="ReviewReview  ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
+                    ipsam.
+                  </span>
+                  <h1 className="Reviewer">Chezka Kae</h1>
+                </div>
+              </div>
+              <div className="ReviewItem">
+                <img
+                  className="ReviewImg"
+                  src={Chezka}
+                  width={150}
+                  height={150}
+                ></img>
+                <div className="ReviewTextContainer">
+                  <span className="ReviewReview  ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
+                    ipsam.
+                  </span>
+                  <h1 className="Reviewer">Chezka Kae</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
