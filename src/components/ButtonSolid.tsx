@@ -1,4 +1,4 @@
-import "../styles/ButtonSolid.css";
+import "../styles/buttonSolid.css";
 
 const ButtonSolid = ({ className = "" }) => {
   if (className === "") {
