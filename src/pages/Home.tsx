@@ -1,16 +1,16 @@
 import ButtonSolid from "../components/ButtonSolid";
 import "../styles/home.css";
 import "../styles/fontsizes.css";
-import mockup from "../assets/images/mockup.png";
-import basselItani from "../assets/images/bassel-itani.jpeg";
-import Chezka from "../assets/images/chezka.jpeg";
-import check from "../assets/images/check.png";
+import mockup from "../assets/images/mockup.avif";
+import basselItani from "../assets/images/bassel-itani.avif";
+import Chezka from "../assets/images/chezka.avif";
+import check from "../assets/images/check.avif";
 import ServiceBox from "../components/ServiceBox";
-import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.png";
-import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.png";
-import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.png";
-import blueCheck from "../assets/icons/blue-check.png";
-import forbidden from "../assets/icons/forbidden.png";
+import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.avif";
+import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.avif";
+import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.avif";
+import blueCheck from "../assets/icons/blue-check.avif";
+import forbidden from "../assets/icons/forbidden.avif";
 const Services1 = [
   {
     Title: "Mobile First Design",
