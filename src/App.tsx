@@ -11,7 +11,7 @@ function App() {
       <Navigation />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="The-Mine-Field" element={<Home></Home>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
