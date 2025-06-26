@@ -39,8 +39,8 @@ const Footer = () => {
               <div className="ContactInformationIconsContainer">
                 <svg
                   className="FooterIcon"
-                  width="30px"
-                  height="30px"
+                  width="20px"
+                  height="20px"
                   viewBox="0 0 24 24"
                   fill="white"
                   xmlns="http://www.w3.org/2000/svg"
