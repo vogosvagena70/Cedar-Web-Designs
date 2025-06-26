@@ -49,6 +49,10 @@
     gap: 3rem;
     justify-content: space-between;
     padding-right: 30px;
+
+    @media (max-width: 1080px) {
+        justify-content: center;
+    }
 }
 
 .cs-ul{
@@ -86,4 +90,22 @@ a{
 a{
     color: white;
     text-decoration: none;
+}
+
+.NavBar{
+    @media (max-width: 1080px) {
+        display: none;
+        
+    } 
+}
+
+.nav-button{
+     @media (max-width: 1080px) {
+        display: none;
+        
+    } 
+}
+
+.nav-logo{
+ 
 }

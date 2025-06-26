@@ -36,6 +36,7 @@ const Navigation = () => {
               decoding="async"
               aria-hidden="true"
               loading="lazy"
+              className="nav-logo"
             ></img>
             <nav className="NavBar">
               <div className="ulContainer">
@@ -61,7 +62,7 @@ const Navigation = () => {
                 </ul>
               </div>
             </nav>
-            <div className="position-relative">
+            <div className="position-relative nav-button">
               <ButtonSolid className="bg-white color-black" />
             </div>
           </div>
