@@ -5,6 +5,7 @@ import mockup from "../assets/images/mockup.avif";
 import basselItani from "../assets/images/bassel-itani.avif";
 import Chezka from "../assets/images/chezka.avif";
 import Hicham from "../assets/images/hicham.jpeg";
+import Ibrahim from "../assets/images/ibrahim.jpeg";
 import check from "../assets/images/check.avif";
 import ServiceBox from "../components/ServiceBox";
 import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.avif";
@@ -619,24 +620,6 @@ const Home = () => {
               <div className="ReviewItem">
                 <img
                   className="ReviewImg"
-                  src={basselItani}
-                  width={150}
-                  height={150}
-                ></img>
-                <div className="ReviewTextContainer">
-                  <span className="ReviewReview  ">
-                    Working with Bassel has been an absolute pleasure. He took
-                    the time to understand exactly what I wanted and brought my
-                    vision to life. The site looks amazing and runs flawlessly.
-                    Highly recommended!
-                  </span>
-
-                  <h1 className="Reviewer">Bassel Itani</h1>
-                </div>
-              </div>
-              <div className="ReviewItem">
-                <img
-                  className="ReviewImg"
                   src={Chezka}
                   width={150}
                   height={150}
@@ -649,6 +632,24 @@ const Home = () => {
                     recommend his services.
                   </span>
                   <h1 className="Reviewer">Chezka Kae</h1>
+                </div>
+              </div>
+              <div className="ReviewItem">
+                <img
+                  className="ReviewImg"
+                  src={Ibrahim}
+                  width={150}
+                  height={150}
+                ></img>
+                <div className="ReviewTextContainer">
+                  <span className="ReviewReview  ">
+                    Working with Bassel has been an absolute pleasure. He took
+                    the time to understand exactly what I wanted and brought my
+                    vision to life. The site looks amazing and runs flawlessly.
+                    Highly recommended!
+                  </span>
+
+                  <h1 className="Reviewer">Ibrahim Al Sebaai</h1>
                 </div>
               </div>
               <div className="ReviewItem">

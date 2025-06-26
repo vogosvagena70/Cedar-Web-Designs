@@ -56,3 +56,11 @@ text-align: justify;
 .ContactInformationFotterText{
     font-size: clamp(1.5rem,3vw,2.5rem);;
 }
+
+.FooterIcon{ 
+}
+
+.ContactInformationIconsContainer{
+    display: flex;
+    gap: 0.2em;
+}
