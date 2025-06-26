@@ -54,6 +54,16 @@
     display: flex;
     gap: 3rem;
     margin-top: 50px;
+
+    @media (max-width: 380px) {
+        flex-direction: column;
+    }
+}
+
+.AboutUsButton{
+    @media (max-width: 380px) {
+        display: none;
+    }
 }
 
  
@@ -487,8 +497,10 @@ position: relative;
 
 .BasselItaniBadge{
     position: absolute;
-    width: 300px;
-    height: 100px;
+    /* 300px */
+    width:  min(300px,40%); 
+    /* 100px */
+    height: min(100px,30%); 
     background-color: #fff;
     border-radius: 0.5rem;
     bottom: 20px;
@@ -496,7 +508,8 @@ position: relative;
 }
 
 .BasselItaniBadgeTitle{
-    font-size: 1.25rem;
+    /* 1.25rem */
+    font-size: clamp(1rem,4vw,1.25rem);
     font-weight: bold;
 }
 

@@ -85,7 +85,7 @@ const Home = () => {
                 <div>
                   <ButtonSolid className="bg-white color-black" />
                 </div>
-                <div className="color-white">About us</div>
+                <div className="color-white AboutUsButton">About us</div>
               </div>
             </div>
 
