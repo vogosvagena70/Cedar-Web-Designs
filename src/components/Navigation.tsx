@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/navigation.css";
-import WhiteLogo from "../assets/svg/logo-white.svg";
+import CedarLogo from "../assets/images/Logo/cedar-logo.png";
 import ButtonSolid from "./ButtonSolid";
 
 const Navigation = () => {
@@ -30,7 +30,7 @@ const Navigation = () => {
           <div className="container">
             <img
               alt="logo"
-              src={WhiteLogo}
+              src={CedarLogo}
               height="43"
               width="197"
               decoding="async"

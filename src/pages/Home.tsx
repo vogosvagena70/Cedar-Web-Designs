@@ -126,14 +126,14 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-align-center pt-2">
-                At Oak Harbor Web Designs, we specialize in small business web
-                design and development for clients anywhere in the US and
-                Canada. Every line of code is written by hand to ensure the best
-                performance and make Google happy, which helps bring in more
-                customers to your site and bring more revenue to your business.
-                We also manage the edits for you and will never leave you high
-                and dry. Our goal is to create long term relationships with our
-                clients and see them grow over time.
+                At Cedar Web Designs, we specialize in small business web design
+                and development for clients anywhere in the US and Canada. Every
+                line of code is written by hand to ensure the best performance
+                and make Google happy, which helps bring in more customers to
+                your site and bring more revenue to your business. We also
+                manage the edits for you and will never leave you high and dry.
+                Our goal is to create long term relationships with our clients
+                and see them grow over time.
               </div>
             </div>
             <div className="ListWrapper">
