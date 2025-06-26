@@ -1,5 +1,5 @@
 import "../styles/footer.css";
-import CedarSVG from "../assets/images/Logo/CEDAR.svg";
+import CedarSVG from "../assets/images/Logo/cedar.svg";
 import ButtonSolid from "../components/ButtonSolid";
 
 const Footer = () => {
