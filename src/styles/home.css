@@ -763,7 +763,7 @@ position: relative;
     margin-top: 50px;
     flex-direction: row;
     gap: 2rem;
-
+    justify-content: center;
     @media (max-width: 1000px) {
         flex-direction: column;
         gap: 5rem;
