@@ -4,6 +4,7 @@ import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.avif";
 import basselItani from "../assets/images/bassel-itani.avif";
 import Chezka from "../assets/images/chezka.avif";
+import Hicham from "../assets/images/hicham.jpeg";
 import check from "../assets/images/check.avif";
 import ServiceBox from "../components/ServiceBox";
 import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.avif";
@@ -624,9 +625,10 @@ const Home = () => {
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
-                    ipsam.
+                    Working with Bassel has been an absolute pleasure. He took
+                    the time to understand exactly what I wanted and brought my
+                    vision to life. The site looks amazing and runs flawlessly.
+                    Highly recommended!
                   </span>
 
                   <h1 className="Reviewer">Bassel Itani</h1>
@@ -641,9 +643,10 @@ const Home = () => {
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
-                    ipsam.
+                    Cedar Web delivered exactly what we needed. The site is
+                    clean, fast, and user-friendly. Bassel's attention to detail
+                    and quick responses made all the difference. I highly
+                    recommend his services.
                   </span>
                   <h1 className="Reviewer">Chezka Kae</h1>
                 </div>
@@ -651,17 +654,17 @@ const Home = () => {
               <div className="ReviewItem">
                 <img
                   className="ReviewImg"
-                  src={Chezka}
+                  src={Hicham}
                   width={150}
                   height={150}
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, blanditiis eos temporibus aspernatur laboriosam
-                    ipsam.
+                    Bassel and I worked together on my website, and I couldn’t
+                    be happier. He’s easy to collaborate with and gets things
+                    done right.
                   </span>
-                  <h1 className="Reviewer">Chezka Kae</h1>
+                  <h1 className="Reviewer">Hicham Nehme</h1>
                 </div>
               </div>
             </div>
