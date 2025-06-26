@@ -1,5 +1,58 @@
 .FooterWrapper{
     margin-top: 100px;
-    padding: 50px;
+    padding: 100px;
     background-color: #001f3f;
+}
+
+.Logo{
+    width: 300px; 
+}
+
+.FooterContainer{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:900px){
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.Footer1{
+    color: white;
+    width: 40ch;
+    
+}
+
+.Footer1Description{
+text-align: justify;
+
+    
+}
+
+.Footer2{
+    margin-top: 35px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer2 > h1{
+    font-weight: 700;
+}
+
+.ContactUsBtnFooter{
+    margin-top: 50px;
+}
+
+.FooterSign{
+    margin-top: 100px;
+    padding-top: 50px;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ContactInformationFotterText{
+    font-size: clamp(1.5rem,3vw,2.5rem);;
 }

@@ -657,6 +657,7 @@ const Home = () => {
                   src={Hicham}
                   width={150}
                   height={150}
+                  unselectable="on"
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  ">
