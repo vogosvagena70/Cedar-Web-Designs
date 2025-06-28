@@ -51,6 +51,8 @@ const Navigation = () => {
                 aria-hidden="true"
                 loading="lazy"
                 className="nav-logo"
+                height="43"
+                width="197"
               ></img>
               <img
                 alt="logo"
@@ -59,6 +61,8 @@ const Navigation = () => {
                 aria-hidden="true"
                 loading="lazy"
                 className="nav-logo-black"
+                height="43"
+                width="197"
               ></img>
               {/* <CedarLogoComp /> */}
             </picture>
