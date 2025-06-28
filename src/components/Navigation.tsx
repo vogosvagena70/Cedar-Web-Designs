@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import "../styles/navigation.css";
 import CedarLogo from "../assets/images/Logo/cedar.svg";
+import CedarLogoComp from "./CedarLogo";
 import CedarBlackLogo from "../assets/images/Logo/cedar-black.svg";
+import NewCedarBlackLogo from "../assets/images/Logo/NewCedarBlackPNG.png";
+import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 import ButtonSolid from "./ButtonSolid";
 
 const Navigation = () => {
@@ -43,9 +46,7 @@ const Navigation = () => {
             <picture className="LogoContainer">
               <img
                 alt="logo"
-                src={CedarLogo}
-                height="43"
-                width="197"
+                src={NewCedarWhiteLogo}
                 decoding="async"
                 aria-hidden="true"
                 loading="lazy"
@@ -53,14 +54,13 @@ const Navigation = () => {
               ></img>
               <img
                 alt="logo"
-                src={CedarBlackLogo}
-                height="43"
-                width="197"
+                src={NewCedarBlackLogo}
                 decoding="async"
                 aria-hidden="true"
                 loading="lazy"
                 className="nav-logo-black"
               ></img>
+              {/* <CedarLogoComp /> */}
             </picture>
 
             <nav className="NavBar">

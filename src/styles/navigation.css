@@ -4,6 +4,12 @@
     font-family: sans-serif;
 }
 
+.NavContainer .nav-logo-black{ 
+    transition-property: object-fit;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
 .NavContainer{
     
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -12,12 +18,13 @@
     align-items: center;
     margin-top: 20px;
     width: 94%;
-    height: 6rem;
+    height: 3rem;
     color: white;
     /* background-color: #080c1c; */
     background-color: var(--clr-bg);
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 24px;
     z-index: 9999;
 
     transition-property: width,margin-top,align-items,border-radius,height;
@@ -31,10 +38,10 @@
 }
 
 .NavContainerFull{
- 
+ padding-left: 24px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed; 
-    height: 4rem; 
+    height: 3rem;
     width: 100%;
     margin-top:0;
     border-radius: 0;
