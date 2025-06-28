@@ -1093,8 +1093,9 @@ position: relative;
     top:  -13%;
     right: 70%;
     background-color: white;
-    transform: rotate(-60deg);
-    animation: MeteorShower 4s infinite ease-in-out;
+    transform: rotate(-30deg);
+    animation: MeteorShower 9s infinite ease-in-out;
+    animation-duration: 9s;
     animation-delay: 1s;
 }
 
@@ -1123,8 +1124,9 @@ position: relative;
     top: -20%;
     right: 90%;
     background-color: white;
-    transform: rotate(-45deg);
-    animation: MeteorShower2 7s infinite ease-in-out;
+    transform: rotate(-50deg);
+    animation: MeteorShower2 9s infinite ease-in-out;
+    animation-duration: 9s;
     animation-delay: 2s;
 }
 
@@ -1136,7 +1138,7 @@ position: relative;
   2%{
     opacity: 0;
     top: 90%;
-    right: 30%;
+    right: 10%;
   }
   86%{
     opacity: 0;
