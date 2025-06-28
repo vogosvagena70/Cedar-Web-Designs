@@ -1085,3 +1085,63 @@ position: relative;
     opacity: 50%;
   }
 }
+
+.dark .Meteor1{
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    top:  -13%;
+    right: 70%;
+    background-color: white;
+    transform: rotate(-60deg);
+    animation: MeteorShower 4s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes MeteorShower {
+  0% {
+    top: -13%;
+    right: 90%;
+  }
+  2%{
+    opacity: 0;
+    top: 90%;
+    right: 30%;
+  }
+  86%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dark .Meteor2{
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    top: -20%;
+    right: 90%;
+    background-color: white;
+    transform: rotate(-45deg);
+    animation: MeteorShower2 7s infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes MeteorShower2 {
+  0% {
+    top: -13%;
+    right: 80%;
+  }
+  2%{
+    opacity: 0;
+    top: 90%;
+    right: 30%;
+  }
+  86%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

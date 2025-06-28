@@ -65,6 +65,8 @@ const Home = () => {
   return (
     <>
       <section className="HeroSection" id="HeroSection">
+        <span className="Meteor1"></span>
+        <span className="Meteor2"></span>
         <div className="Universe1">
           <div className="TestAnimation1"></div>
           <div className="TestAnimation2"></div>
