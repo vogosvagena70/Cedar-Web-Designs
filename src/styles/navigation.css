@@ -6,15 +6,16 @@
 
 .NavContainer{
     
-
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     border-radius: 1.5rem; 
     align-items: center;
     margin-top: 20px;
     width: 94%;
-    height: 4rem;
+    height: 6rem;
     color: white;
-    background-color: #080c1c;
+    /* background-color: #080c1c; */
+    background-color: var(--clr-bg);
     padding-top: 24px;
     padding-bottom: 24px;
     z-index: 9999;
@@ -31,14 +32,14 @@
 
 .NavContainerFull{
  
-
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed; 
     height: 4rem; 
     width: 100%;
     margin-top:0;
     border-radius: 0;
     color: white;
-    background-color: #080c1c;
+    background-color: var(--clr-bg);
     padding-top: 24px;
     padding-bottom: 24px;
     z-index: 9999;
@@ -83,6 +84,11 @@ ul{
 a{
     font-weight: 900;
     font-size:15px;
+    font-size: clamp(10px,1vw,15px);
+}
+
+.nav-text{
+    
 }
 
 /* .cs-button-solid{
@@ -117,5 +123,48 @@ a{
 
 .nav-logo{
     object-fit: cover;
-    height: 100%;
+    height: 100%; 
+}
+
+.nav-logo-black{
+    object-fit: cover;
+    height: 100%; 
+}
+
+/* Hide white logo */
+.LogoContainer img:first-child{
+    display: none;
+}
+
+/* Hide black logo */
+.dark .LogoContainer img:last-child{
+    display: none;
+}
+
+/* Then show white logo */
+.dark .LogoContainer img:first-child{
+    display: block;
+}
+ 
+/* Hide moon */
+.ThemeContainer svg:first-child{
+    display: none;
+}
+
+/* Hide Sun */
+.dark .ThemeContainer svg:last-child{
+    display: none;
+}
+
+/* Then show moon */
+.dark .ThemeContainer svg:first-child{
+    display: block;
+}
+
+.Text-Color{
+    color: var(--clr-text);
+}
+
+.SVG-Color{
+ 
 }

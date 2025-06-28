@@ -1,0 +1,15 @@
+:root{
+    --clr-text:hsl(0, 0%, 0%);
+    --clr-topper:#707070;
+    --clr-bg:white;
+    --clr-foreground:#001f3f;
+    --clr-AboutUs:#f7f7f7;
+}
+
+.dark {
+    --clr-text:hsl(0, 0%, 100%);
+    --clr-topper:#43b7ff;
+    --clr-bg:#030f18;
+    --clr-foreground:#041126;
+    --clr-AboutUs:#02090e;
+}

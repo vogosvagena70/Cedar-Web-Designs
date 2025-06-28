@@ -65,6 +65,54 @@ const Home = () => {
   return (
     <>
       <section className="HeroSection" id="HeroSection">
+        <div className="Universe1">
+          <div className="TestAnimation1"></div>
+          <div className="TestAnimation2"></div>
+          <div className="TestAnimation3"></div>
+          <div className="TestAnimation4"></div>
+          <div className="TestAnimation5"></div>
+          <div className="TestAnimation6"></div>
+          <div className="TestAnimation7"></div>
+          <div className="TestAnimation8"></div>
+          <div className="TestAnimation9"></div>
+          <div className="TestAnimation10"></div>
+          <div className="TestAnimation11"></div>
+          <div className="TestAnimation12"></div>
+          <div className="TestAnimation13"></div>
+        </div>
+
+        <div className="Universe2">
+          <div className="TestAnimation1"></div>
+          <div className="TestAnimation2"></div>
+          <div className="TestAnimation3"></div>
+          <div className="TestAnimation4"></div>
+          <div className="TestAnimation5"></div>
+          <div className="TestAnimation6"></div>
+          <div className="TestAnimation7"></div>
+          <div className="TestAnimation8"></div>
+          <div className="TestAnimation9"></div>
+          <div className="TestAnimation10"></div>
+          <div className="TestAnimation11"></div>
+          <div className="TestAnimation12"></div>
+          <div className="TestAnimation13"></div>
+        </div>
+
+        <div className="Universe3">
+          <div className="TestAnimation1"></div>
+          <div className="TestAnimation2"></div>
+          <div className="TestAnimation3"></div>
+          <div className="TestAnimation4"></div>
+          <div className="TestAnimation5"></div>
+          <div className="TestAnimation6"></div>
+          <div className="TestAnimation7"></div>
+          <div className="TestAnimation8"></div>
+          <div className="TestAnimation9"></div>
+          <div className="TestAnimation10"></div>
+          <div className="TestAnimation11"></div>
+          <div className="TestAnimation12"></div>
+          <div className="TestAnimation13"></div>
+        </div>
+
         <div className="Hero-filler"></div>
         <div className="Hero-wrapper">
           <div className="Hero-container">
@@ -109,10 +157,7 @@ const Home = () => {
             viewBox="0 0 1920 500"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M251.463 378.438C126.937 315.555 47.343 253.833 0 209.721V501h1920V0c-356.51 157.88-717.07 312.544-986.268 407.584-269.195 95.039-457.636 84.299-682.269-29.146Z"
-              fill="#fff"
-            ></path>
+            <path d="M251.463 378.438C126.937 315.555 47.343 253.833 0 209.721V501h1920V0c-356.51 157.88-717.07 312.544-986.268 407.584-269.195 95.039-457.636 84.299-682.269-29.146Z"></path>
           </svg>
         </div>
       </section>
@@ -121,13 +166,13 @@ const Home = () => {
         <div className="ServiceWrapper">
           <div className="ServicesContainer">
             <div className="ServiceDescriptionContainer">
-              <div className="  text-align-center">WHAT WE DO</div>
+              <div className=" Topper text-align-center">WHAT WE DO</div>
               <div className=" ">
-                <p className="text-large text-align-center">
+                <p className="text-large text-align-center Text-Color">
                   NEVER WORRY ABOUT YOUR WEBSITE EVER AGAIN
                 </p>
               </div>
-              <div className="text-align-center pt-2">
+              <div className="text-align-center pt-2 Text-Color">
                 At Cedar Web Designs, we specialize in small business web design
                 and development for clients anywhere in the US and Canada. Every
                 line of code is written by hand to ensure the best performance

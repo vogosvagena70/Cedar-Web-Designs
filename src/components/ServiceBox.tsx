@@ -29,7 +29,7 @@ const ServiceBox = ({
           {SVG == "mobile" ? <MobileSVG /> : ""}
           {SVG == "mobile" ? <MobileSVG /> : ""} */}
         </div>
-        <div className="InnerItem">
+        <div className="InnerItem Text-Color">
           <div className="text-medium">{Title}</div>
           <div className="">{Body}</div>
           <div className="">{LinkText}</div>
