@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "../styles/navigation.css";
-import CedarLogo from "../assets/images/Logo/cedar.svg";
-import CedarLogoComp from "./CedarLogo";
-import CedarBlackLogo from "../assets/images/Logo/cedar-black.svg";
+// import CedarLogo from "../assets/images/Logo/cedar.svg";
+// import CedarLogoComp from "./CedarLogo";
+// import CedarBlackLogo from "../assets/images/Logo/cedar-black.svg";
 import NewCedarBlackLogo from "../assets/images/Logo/NewCedarBlackPNG.png";
 import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 import ButtonSolid from "./ButtonSolid";
