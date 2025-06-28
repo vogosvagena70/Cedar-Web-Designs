@@ -1097,6 +1097,10 @@ position: relative;
     animation: MeteorShower 9s infinite ease-in-out;
     animation-duration: 9s;
     animation-delay: 1s;
+
+    @media (max-width: 500px) {
+        transform: rotate(-10deg);
+    }
 }
 
 @keyframes MeteorShower {
@@ -1105,7 +1109,7 @@ position: relative;
     right: 90%;
   }
   2%{
-    opacity: 0;
+    opacity: 0.1;
     top: 90%;
     right: 40%;
   }
@@ -1128,6 +1132,10 @@ position: relative;
     animation: MeteorShower2 9s infinite ease-in-out;
     animation-duration: 9s;
     animation-delay: 2s;
+
+    @media (max-width: 500px) {
+        transform: rotate(-22deg);
+    }
 }
 
 @keyframes MeteorShower2 {
