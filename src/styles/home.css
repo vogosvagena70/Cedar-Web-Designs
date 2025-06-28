@@ -1082,7 +1082,7 @@ position: relative;
     opacity: 60%;
   }
   100% {
-    opacity: 50%;
+    opacity: 5%;
   }
 }
 
@@ -1106,7 +1106,7 @@ position: relative;
   2%{
     opacity: 0;
     top: 90%;
-    right: 30%;
+    right: 40%;
   }
   86%{
     opacity: 0;
