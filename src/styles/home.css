@@ -848,8 +848,8 @@ position: relative;
 
 
 .dark .TestAnimation1{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 30%;
   left: 3%;
   opacity: 0%;
@@ -860,8 +860,8 @@ position: relative;
   animation-delay: 0.3s;
 }
 .dark .TestAnimation2{  
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 30%;
   left: 50%;
   opacity: 0%;
@@ -872,8 +872,8 @@ position: relative;
   animation-delay: 1.2s;
 }
 .dark .TestAnimation3{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 60%;
   left: 45%;
   opacity: 0%;
@@ -884,8 +884,8 @@ position: relative;
   animation-delay: 0.4s;
 }
 .dark .TestAnimation4{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 20%;
   left: 30%;
   opacity: 0%;
@@ -896,8 +896,8 @@ position: relative;
   animation-delay: 1s;
 }
 .dark .TestAnimation5{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 25%;
   left: 60%;
   opacity: 0%;
@@ -908,8 +908,8 @@ position: relative;
   animation-delay: 0s;
 }
 .dark .TestAnimation6{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 20%;
   left: 90%;
   opacity: 0%;
@@ -921,8 +921,8 @@ position: relative;
 }
 
 .dark .TestAnimation7{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 35%;
   left:20%;
   opacity: 0%;
@@ -934,8 +934,8 @@ position: relative;
 }
 
 .dark .TestAnimation7{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 50%;
   left:5%;
   opacity: 0%;
@@ -947,8 +947,8 @@ position: relative;
 }
 
 .dark .TestAnimation8{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 44%;
   left:44%;
   opacity: 0%;
@@ -960,8 +960,8 @@ position: relative;
 }
 
 .dark .TestAnimation9{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 34%;
   left:34%;
   opacity: 0%;
@@ -973,8 +973,8 @@ position: relative;
 }
 
 .dark .TestAnimation10{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 32%;
   left:14%;
   opacity: 0%;
@@ -986,8 +986,8 @@ position: relative;
 }
 
 .dark .TestAnimation11{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 30%;
   left:80%;
   opacity: 0%;
@@ -998,8 +998,8 @@ position: relative;
   animation-delay: 0.5s;
 }
 .dark .TestAnimation12{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 44%;
   left:85%;
   opacity: 0%;
@@ -1011,8 +1011,8 @@ position: relative;
 }
 
 .dark .TestAnimation13{ 
-    width: 3px;
-  height: 3px;
+    width: 2px;
+  height: 2px;
   top: 32%;
   left:96%;
   opacity: 0%;
@@ -1093,7 +1093,7 @@ position: relative;
     top:  -13%;
     right: 70%;
     background-color: white;
-    transform: rotate(-30deg);
+    transform: rotate(-40deg);
     animation: MeteorShower 9s infinite ease-in-out;
     animation-duration: 9s;
     animation-delay: 1s;
@@ -1130,8 +1130,8 @@ position: relative;
     background-color: white;
     transform: rotate(-50deg);
     animation: MeteorShower2 9s infinite ease-in-out;
-    animation-duration: 9s;
-    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-delay: 1.2s;
 
     @media (max-width: 500px) {
         transform: rotate(-22deg);

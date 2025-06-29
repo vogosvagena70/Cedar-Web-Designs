@@ -43,7 +43,7 @@ const Navigation = () => {
           }
         >
           <div className="container">
-            <picture className="LogoContainer">
+            <a className="LogoContainer">
               <img
                 alt="logo"
                 src={NewCedarWhiteLogo}
@@ -65,7 +65,12 @@ const Navigation = () => {
                 width="197"
               ></img>
               {/* <CedarLogoComp /> */}
-            </picture>
+              <div className="neon" aria-hidden="true" aria-label="after dark">
+                <span>A</span> <span>f</span> <span>t</span> <span>e</span>{" "}
+                <span>r</span> <span>D</span> <span>a</span> <span>r</span>{" "}
+                <span>k</span>
+              </div>
+            </a>
 
             <nav className="NavBar">
               <div className="ulContainer">
