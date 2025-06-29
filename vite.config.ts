@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/The-Mine-Field/",
+  base:"/Cedar-Web-Designs/",
   plugins: [react()]
   
 })
