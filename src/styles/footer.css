@@ -1,4 +1,5 @@
 .FooterWrapper{
+    margin-top: -1px;
     padding-top: 100px;
     padding: 100px;
     background-color: var(--clr-foreground);

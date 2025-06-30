@@ -1,9 +1,12 @@
+
 /* img{
     display: block;
     max-width: 100%;
 } */
 
 @import './constants.css';
+
+ 
 
 .color-white{
     color: white;
@@ -42,7 +45,7 @@
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-    
+    margin-top: -1px;
     @media (max-width: 500px) {
         padding-left: 60px;
     padding-right: 60px;
@@ -172,6 +175,7 @@ z-index: 2;
 } 
 
 .ServiceWrapper{
+    margin-top: -1px;
     padding-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
@@ -474,6 +478,7 @@ margin-right: auto;
 }
 
 .WhatWeOfferWrapper{
+    margin-top: -1px;
     background-color:  var(--clr-bg);
     padding-left: 50px;
     padding-right: 50px;
@@ -583,6 +588,7 @@ position: relative;
 
 
 .PortfolioWrapper{
+    margin-top: -1px;
     background-color: var(--clr-bg-secondary);
     padding-left: 50px;
     padding-right: 50px;
@@ -656,6 +662,7 @@ position: relative;
 }
 
 .PricingWrapper{
+    margin-top: -1px;
     background-color: var(--clr-bg-secondary);
     padding-left: 25px;
     padding-right: 25px;
@@ -758,6 +765,7 @@ position: relative;
 }
 
 .ReviewsWrapper{
+    margin-top: -1px;
     background-color:  var(--clr-bg);
     padding-left: 25px;
     padding-right: 25px;
