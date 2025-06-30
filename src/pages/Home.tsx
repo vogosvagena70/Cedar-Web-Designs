@@ -472,21 +472,50 @@ const Home = () => {
                   </li>
                   <li className="PricingFeature Text-Color">
                     24/7 Support
-                    <img
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="float-right"
-                      src={forbidden}
-                      height={18}
-                      width={18}
-                    ></img>
+                    >
+                      <g id="Warning / Stop_Sign">
+                        <path
+                          id="Vector"
+                          d="M5.75 5.75L18.25 18.25M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="Bawal "
+                        />
+                      </g>
+                    </svg>
                   </li>
+
                   <li className="PricingFeature Text-Color">
                     Lifetime Updates
-                    <img
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="float-right"
-                      src={forbidden}
-                      height={18}
-                      width={18}
-                    ></img>
+                    >
+                      <g id="Warning / Stop_Sign">
+                        <path
+                          id="Vector"
+                          d="M5.75 5.75L18.25 18.25M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="Bawal "
+                        />
+                      </g>
+                    </svg>
                   </li>
                 </ul>
 
@@ -502,7 +531,7 @@ const Home = () => {
                   <ButtonSolid className="bg-primary color-black secondary-hover" />
                 </div>
               </div>
-              <div className="PricingItem bg-color-darkblue-pricing color-white">
+              <div className="PricingItem bg-color-darkblue-pricing color-white NeonBorder">
                 <h1 className="PricingItemTitle  ">MONTHLY</h1>
                 <ul className="PricingFeaturesList">
                   <li className="PricingFeature  ">
@@ -629,21 +658,49 @@ const Home = () => {
                   </li>
                   <li className="PricingFeature Text-Color">
                     24/7 Support
-                    <img
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="float-right"
-                      src={forbidden}
-                      height={18}
-                      width={18}
-                    ></img>
+                    >
+                      <g id="Warning / Stop_Sign">
+                        <path
+                          id="Vector"
+                          d="M5.75 5.75L18.25 18.25M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="Bawal "
+                        />
+                      </g>
+                    </svg>
                   </li>
                   <li className="PricingFeature Text-Color">
                     Lifetime Updates
-                    <img
+                    <svg
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="float-right"
-                      src={forbidden}
-                      height={18}
-                      width={18}
-                    ></img>
+                    >
+                      <g id="Warning / Stop_Sign">
+                        <path
+                          id="Vector"
+                          d="M5.75 5.75L18.25 18.25M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="Bawal "
+                        />
+                      </g>
+                    </svg>
                   </li>
                 </ul>
 

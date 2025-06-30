@@ -41,7 +41,8 @@
 
 .Hero-wrapper{
     background-color: var(--clr-foreground);
-
+    padding-left: 20px;
+    padding-right: 20px;
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -1172,3 +1173,16 @@ position: relative;
     opacity: 0;
   }
 } 
+
+.dark .NeonBorder{
+    border: 1px solid white;
+    box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 44px, inset rgba(67, 183, 255, 0.2) 0px 0px 30px, inset rgba(67, 183, 255, 0.2) 0px 0px 55px, rgba(67, 183, 255, 0.4) 0px 0px 10px;
+}
+
+.Bawal{
+    stroke: black !important;
+}
+
+.dark .Bawal{
+    stroke: white !important;
+}
