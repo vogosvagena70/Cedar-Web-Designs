@@ -2,14 +2,36 @@
     --clr-text:hsl(0, 0%, 0%);
     --clr-topper:#707070;
     --clr-bg:white;
+    --clr-bg-secondary:#f7f7f7;
+    --clr-bg-secondary-price:#001f3f;
     --clr-foreground:#001f3f;
     --clr-AboutUs:#f7f7f7;
+    --clr-btn-primary:#43b7ff;    
+    --clr-btn-primary-hover:#fff;
+
+    --clr-btn-secondary:#001f3f;
+    --clr-btn-secondary-hover:#43b7ff;
+
+    --clr-btn-transparent-primary:'';
+
+    --clr-bg-reviews:#f7f7f7;
 }
 
 .dark {
     --clr-text:hsl(0, 0%, 100%);
     --clr-topper:#43b7ff;
     --clr-bg:#030f18;
+    --clr-bg-secondary:black;
+    --clr-bg-secondary-price:#030f18;
     --clr-foreground:#041126;
     --clr-AboutUs:#02090e;
+    --clr-btn-primary:#fff;
+    --clr-btn-primary-hover:#fff;
+
+    --clr-btn-secondary:#001f3f;
+    --clr-btn-secondary-hover:#43b7ff;
+
+    --clr-btn-transparent-primary:'';
+
+    --clr-bg-reviews:black;
 }

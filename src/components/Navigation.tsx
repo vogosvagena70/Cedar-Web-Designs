@@ -107,7 +107,7 @@ const Navigation = () => {
               </div>
             </nav>
             <div className="position-relative nav-button">
-              <ButtonSolid className="bg-white color-black" />
+              <ButtonSolid className="bg-primary color-black secondary-hover" />
             </div>
             <span className="ThemeContainer" onClick={ToggleTheme}>
               <svg

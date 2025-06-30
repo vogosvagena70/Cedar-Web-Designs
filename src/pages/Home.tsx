@@ -116,6 +116,7 @@ const Home = () => {
         </div>
 
         <div className="Hero-filler"></div>
+
         <div className="Hero-wrapper">
           <div className="Hero-container">
             <div className="Hero color-white">
@@ -135,7 +136,7 @@ const Home = () => {
 
               <div className="buttons-container">
                 <div>
-                  <ButtonSolid className="bg-white color-black" />
+                  <ButtonSolid className=" bg-primary color-black" />
                 </div>
                 <div className="color-white AboutUsButton">About us</div>
               </div>
@@ -216,20 +217,20 @@ const Home = () => {
             </div>
           </div>
           <div className="put-center">
-            <ButtonSolid className="bg-primary color-white" />
+            <ButtonSolid className="bg-primary color-black secondary-hover" />
           </div>
         </div>
       </section>
 
       <section id="Services">
-        <div className="WhatWeOfferWrapper mt-10r">
+        <div className="WhatWeOfferWrapper">
           <div className="WhatWeOfferContainer">
             <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
-              <div className="WhatWeOfferTitle">
+              <div className="WhatWeOfferTitle Text-Color">
                 Websites Starting At $0 Down And $125 Per Month
               </div>
-              <div className="mt-2 WhatWeOfferDescription">
+              <div className="mt-2 WhatWeOfferDescription Text-Color">
                 We offer $0 down for a standard 5 page small business website.
                 If you need more than that then we have to do custom pricing
                 based on the scope of work, number of additional pages, and time
@@ -241,9 +242,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>100% Secure</h3>
+                    <h3 className="Text-Color">100% Secure</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     Our sites are pure static HTML and CSS, with nothing
                     hackable.
                   </div>
@@ -251,18 +252,18 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>Designed From The Ground Up</h3>
+                    <h3 className="Text-Color">Designed From The Ground Up</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     Our designs are done in-house, giving us complete control.
                   </div>
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>100% Speed Score</h3>
+                    <h3 className="Text-Color">100% Speed Score</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     Purpose-built with zero excess, our sites hit top marks on
                     Google speed: 98–100.
                   </div>
@@ -270,9 +271,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>Money Back Gurantee</h3>
+                    <h3 className="Text-Color">Money Back Gurantee</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     Don’t love the design? You get your money back and we cancel
                     the contract.
                   </div>
@@ -280,9 +281,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>24/7 Support</h3>
+                    <h3 className="Text-Color">24/7 Support</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     Call or text anytime. You get straight to me — the owner and
                     developer.
                   </div>
@@ -290,16 +291,16 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <img src={check} height={24} width={24}></img>
-                    <h3>SEO Is What We Do</h3>
+                    <h3 className="Text-Color">SEO Is What We Do</h3>
                   </div>
-                  <div className="OfferDescription">
+                  <div className="OfferDescription Text-Color">
                     No gimmicks, no BS — just clear SEO explained and real
                     strategies to boost your rank.
                   </div>
                 </li>
               </ul>
               <div className="mt-4">
-                <ButtonSolid className="bg-primary color-white" />
+                <ButtonSolid className="bg-primary color-black secondary-hover" />
               </div>
             </div>
             <div className="WhatWeOfferImageContainer">
@@ -326,10 +327,12 @@ const Home = () => {
             <div className="PortfolioDescriptionContainer">
               <div className="PortfolioDescriptionLeft">
                 <span className="Topper">PORTFOLIO</span>
-                <h2 className="text-large">SOME OF THE WORK WE'VE DONE</h2>
+                <h2 className="text-large Text-Color">
+                  SOME OF THE WORK WE'VE DONE
+                </h2>
               </div>
               <div className="PortfolioDescriptionRight">
-                <span>
+                <span className="Text-Color">
                   We have worked with clients all over the US and Canada for
                   home services contractors, restaurants, consulting agencies,
                   start ups, dermatologists, doctors, accountants, and more. No
@@ -350,13 +353,13 @@ const Home = () => {
                       width={413}
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
-                      <h2>Nakhal</h2>
-                      <span>
+                      <h2 className="Text-Color">Nakhal</h2>
+                      <span className="Text-Color">
                         Nakhal is the largest travel agency company in Lebanon
                         for over 65 years.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-white" />
+                        <ButtonSolid className="bg-primary color-black secondary-hover" />
                       </div>
                     </div>
                   </div>
@@ -370,13 +373,13 @@ const Home = () => {
                       width={413}
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
-                      <h2>Skyjunxion</h2>
-                      <span>
+                      <h2 className="Text-Color">Skyjunxion</h2>
+                      <span className="Text-Color">
                         Skyjunxion is the leading agency in B2B solutions for
                         travel.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-white" />
+                        <ButtonSolid className="bg-primary color-black secondary-hover" />
                       </div>
                     </div>
                   </div>
@@ -390,13 +393,13 @@ const Home = () => {
                       width={413}
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
-                      <h2>Sentient</h2>
-                      <span>
+                      <h2 className="Text-Color">Sentient</h2>
+                      <span className="Text-Color">
                         For Sentient, we had a much larger scope of work where
                         we built them an invoice system.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-white" />
+                        <ButtonSolid className="bg-primary color-black secondary-hover" />
                       </div>
                     </div>
                   </div>
@@ -413,16 +416,16 @@ const Home = () => {
             <div className="PricingHeader">
               <div className="PricingTitle">
                 <div className="Topper">OUR PRICING</div>
-                <h1 className="PricingTitleTitle">
+                <h1 className="PricingTitleTitle Text-Color">
                   PRICING PACKAGE FOR EVERY BUDGET
                 </h1>
               </div>
             </div>
             <div className="PricingList">
-              <div className="PricingItem">
-                <h1 className="PricingItemTitle">LUMP SUM</h1>
+              <div className="PricingItem bg-color-white-pricing">
+                <h1 className="PricingItemTitle Text-Color">LUMP SUM</h1>
                 <ul className="PricingFeaturesList">
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     Design And Development
                     <img
                       className="float-right"
@@ -431,7 +434,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     $25/mo Hosting
                     <img
                       className="float-right"
@@ -440,7 +443,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     $100 Fee Per Page After 5
                     <img
                       className="float-right"
@@ -449,7 +452,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     +$50/mo Unlimited edits Add-on
                     <img
                       className="float-right"
@@ -458,7 +461,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     +$250 To Add A Blog
                     <img
                       className="float-right"
@@ -467,7 +470,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     24/7 Support
                     <img
                       className="float-right"
@@ -476,7 +479,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     Lifetime Updates
                     <img
                       className="float-right"
@@ -488,18 +491,21 @@ const Home = () => {
                 </ul>
 
                 <div className="PricingItemPrice">
-                  <span className="PIPTitle">
-                    $3800<span className="PIPDuration">+$25/mo Hosting</span>
+                  <span className="PIPTitle Text-Color">
+                    $3800
+                    <span className="PIPDuration Text-Color">
+                      +$25/mo Hosting
+                    </span>
                   </span>
                 </div>
                 <div className="pb-5">
-                  <ButtonSolid className="bg-primary color-white" />
+                  <ButtonSolid className="bg-primary color-black secondary-hover" />
                 </div>
               </div>
-              <div className="PricingItem bg-color-darkblue color-white">
-                <h1 className="PricingItemTitle">MONTHLY</h1>
+              <div className="PricingItem bg-color-darkblue-pricing color-white">
+                <h1 className="PricingItemTitle  ">MONTHLY</h1>
                 <ul className="PricingFeaturesList">
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     Design And Development
                     <img
                       className="float-right"
@@ -508,7 +514,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     Includes Hosting
                     <img
                       className="float-right"
@@ -517,7 +523,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     $100 Fee Per Page After 5
                     <img
                       className="float-right"
@@ -526,7 +532,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     Unlimited Edits
                     <img
                       className="float-right"
@@ -535,7 +541,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     +$250 To Add A Blog
                     <img
                       className="float-right"
@@ -544,7 +550,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     24/7 Support
                     <img
                       className="float-right"
@@ -553,7 +559,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature  ">
                     Lifetime Updates
                     <img
                       className="float-right"
@@ -573,10 +579,10 @@ const Home = () => {
                   <ButtonSolid className="bg-white color-black" />
                 </div>
               </div>
-              <div className="PricingItem">
-                <h1 className="PricingItemTitle">Ecommerce</h1>
+              <div className="PricingItem bg-color-white-pricing">
+                <h1 className="PricingItemTitle Text-Color">Ecommerce</h1>
                 <ul className="PricingFeaturesList">
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     Design And Development
                     <img
                       className="float-right"
@@ -585,7 +591,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     $25/mo Hosting
                     <img
                       className="float-right"
@@ -594,7 +600,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     $100 Fee Per Page After 5
                     <img
                       className="float-right"
@@ -603,7 +609,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     +$50/mo Unlimited edits Add-on
                     <img
                       className="float-right"
@@ -612,7 +618,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     +$250 To Add A Blog
                     <img
                       className="float-right"
@@ -621,7 +627,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     24/7 Support
                     <img
                       className="float-right"
@@ -630,7 +636,7 @@ const Home = () => {
                       width={18}
                     ></img>
                   </li>
-                  <li className="PricingFeature">
+                  <li className="PricingFeature Text-Color">
                     Lifetime Updates
                     <img
                       className="float-right"
@@ -642,12 +648,12 @@ const Home = () => {
                 </ul>
 
                 <div className="PricingItemPrice">
-                  <span className="PIPTitle">
-                    $8k<span className="PIPDuration">Starting</span>
+                  <span className="PIPTitle Text-Color">
+                    $8k<span className="PIPDuration Text-Color">Starting</span>
                   </span>
                 </div>
                 <div className="pb-5">
-                  <ButtonSolid className="bg-primary color-white" />
+                  <ButtonSolid className="bg-primary color-black secondary-hover" />
                 </div>
               </div>
             </div>
@@ -659,7 +665,7 @@ const Home = () => {
           <div className="ReviewsContainer">
             <div className="ReviewsDescription">
               <span className="Topper">Testimonials</span>
-              <h1 className="PricingTitleTitle">
+              <h1 className="PricingTitleTitle Text-Color">
                 Trusted Web Designer Across The Country
               </h1>
             </div>
@@ -672,13 +678,13 @@ const Home = () => {
                   height={150}
                 ></img>
                 <div className="ReviewTextContainer">
-                  <span className="ReviewReview  ">
+                  <span className="ReviewReview  Text-Color">
                     Cedar Web delivered exactly what we needed. The site is
                     clean, fast, and user-friendly. Bassel's attention to detail
                     and quick responses made all the difference. I highly
                     recommend his services.
                   </span>
-                  <h1 className="Reviewer">Chezka Kae</h1>
+                  <h1 className="Reviewer Text-Color">Chezka Kae</h1>
                 </div>
               </div>
               <div className="ReviewItem">
@@ -689,14 +695,14 @@ const Home = () => {
                   height={150}
                 ></img>
                 <div className="ReviewTextContainer">
-                  <span className="ReviewReview  ">
+                  <span className="ReviewReview  Text-Color">
                     Working with Bassel has been an absolute pleasure. He took
                     the time to understand exactly what I wanted and brought my
                     vision to life. The site looks amazing and runs flawlessly.
                     Highly recommended!
                   </span>
 
-                  <h1 className="Reviewer">Ibrahim Al Sebaai</h1>
+                  <h1 className="Reviewer Text-Color">Ibrahim Al Sebaai</h1>
                 </div>
               </div>
               <div className="ReviewItem">
@@ -708,12 +714,12 @@ const Home = () => {
                   unselectable="on"
                 ></img>
                 <div className="ReviewTextContainer">
-                  <span className="ReviewReview  ">
+                  <span className="ReviewReview  Text-Color">
                     Bassel and I worked together on my website, and I couldn’t
                     be happier. He’s easy to collaborate with and gets things
                     done right.
                   </span>
-                  <h1 className="Reviewer">Hicham Nehme</h1>
+                  <h1 className="Reviewer Text-Color">Hicham Nehme</h1>
                 </div>
               </div>
             </div>

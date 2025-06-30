@@ -150,6 +150,7 @@ z-index: 2;
 
 .Hero{
     max-width: 500px;
+    z-index: 99;
 }
 
 .hero-text-container{ 
@@ -473,9 +474,11 @@ margin-right: auto;
 }
 
 .WhatWeOfferWrapper{
+    background-color:  var(--clr-bg);
     padding-left: 50px;
     padding-right: 50px;
-
+    padding-top: 10rem;
+    padding-bottom: 5rem;
     @media (max-width: 750px) {
         padding-left: 20px;
         padding-right: 20px;
@@ -580,12 +583,12 @@ position: relative;
 
 
 .PortfolioWrapper{
-    background-color: #f7f7f7;
+    background-color: var(--clr-bg-secondary);
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .Topper{
@@ -653,10 +656,11 @@ position: relative;
 }
 
 .PricingWrapper{
-    background-color: white;
+    background-color: var(--clr-bg-secondary);
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 100px; 
+    padding-bottom: 100px; 
 }
 
 .PricingContainer{
@@ -704,8 +708,12 @@ position: relative;
     padding-left: 25px;
     padding-right: 25px;
 }
-.bg-color-darkblue{
-    background-color: #001f3f;
+.bg-color-darkblue-pricing{
+    background-color: var(--clr-bg-secondary-price);
+}
+
+.bg-color-white-pricing{
+    background-color: var(--clr-bg);
 }
 
 .PricingItemTitle{
@@ -750,11 +758,12 @@ position: relative;
 }
 
 .ReviewsWrapper{
+    background-color:  var(--clr-bg);
     padding-left: 25px;
     padding-right: 25px;
 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     @media (max-width: 1000px) {
         padding-left: 15px;
@@ -809,7 +818,7 @@ position: relative;
 }
 
 .ReviewItem{
-    background-color: #f7f7f7;
+    background-color: var(--clr-bg-reviews);
     width: min(500px,100%);
     height: 100%;
     display: flex;
@@ -1154,4 +1163,4 @@ position: relative;
   100% {
     opacity: 0;
   }
-}
+} 

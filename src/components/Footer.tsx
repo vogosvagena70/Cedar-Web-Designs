@@ -1,6 +1,6 @@
 import "../styles/footer.css";
-import CedarSVG from "../assets/images/Logo/cedar.svg";
 import ButtonSolid from "../components/ButtonSolid";
+import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 
 const Footer = () => {
   return (
@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="FooterWrapper">
           <div className="FooterContainer">
             <div className="Footer1">
-              <img className="Logo" src={CedarSVG} alt="Cedar Logo"></img>
+              <img
+                className="Logo"
+                src={NewCedarWhiteLogo}
+                alt="Cedar Logo"
+              ></img>
               <div className="Footer1Description">
                 We believe small businesses deserve better. Just because you’re
                 small, doesn’t mean your site needs to be. Let us make you

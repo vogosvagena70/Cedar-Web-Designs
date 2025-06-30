@@ -212,13 +212,14 @@ a{
         left: 6.5rem;
 
         @media (max-width: 1080px) {
-            bottom: -0.7rem;        
+            bottom: -0.7rem;     
+            left: 5.5rem;   
         } 
 }
 
 .NavContainerFull .neon{
         bottom: -1rem;
-        left: 6.5rem;
+        left: 5.5rem;
 }
 
 /* show Neon */

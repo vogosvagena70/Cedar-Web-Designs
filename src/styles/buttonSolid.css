@@ -11,7 +11,51 @@
 
 .bg-primary{
     
-    background-color: #001f3f;
+    background-color: var(--clr-btn-primary);
+
+    transition-property: background-color,box-shadow;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+.bg-primary:hover{
+    
+    background-color: var(--clr-btn-primary-hover); 
+    
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.dark .bg-primary:hover{
+box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px, rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px, rgba(67, 183, 255, 0.2) 0px 0px 74px;
+ transition-property:box-shadow;
+     transition-duration: 0.2s;
+}
+
+.bg-secondary{
+    
+    background-color: var(--clr-btn-secondary);
+
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+.bg-secondary:hover{
+    
+    background-color: var(--clr-btn-secondary-hover);
+
+    
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+body:not(.dark) .secondary-hover:hover{
+    background-color: var(--clr-btn-secondary);
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
 }
 
 .color-black{
@@ -20,3 +64,5 @@
 .color-white{
     color: white;
 }
+
+ 
