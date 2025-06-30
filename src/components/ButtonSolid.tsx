@@ -1,6 +1,11 @@
 import "../styles/buttonSolid.css";
 
-const ButtonSolid = ({ className = "" }) => {
+const ButtonSolid = ({
+  className = "",
+  text = "Get started",
+  linkTo = "#",
+  blank = false,
+}) => {
   if (className === "") {
     className = "cs-button-solid bg-white";
   } else {
@@ -8,7 +13,9 @@ const ButtonSolid = ({ className = "" }) => {
   }
   return (
     <>
-      <span className={className}>Get started</span>
+      <a href={linkTo} target={blank === true ? "_blank" : ""}>
+        <span className={className}>{text}</span>
+      </a>
     </>
   );
 };

@@ -135,9 +135,11 @@ const Home = () => {
 
               <div className="buttons-container">
                 <div>
-                  <ButtonSolid className=" bg-primary color-black" />
+                  <ButtonSolid
+                    className=" bg-primary color-black"
+                    linkTo="/Cedar-Web-Designs/ContactUs"
+                  />
                 </div>
-                <div className="color-white AboutUsButton">About us</div>
               </div>
             </div>
 
@@ -191,7 +193,6 @@ const Home = () => {
                   return (
                     <ServiceBox
                       Body={item.Body}
-                      LinkText={item.LinkText}
                       SVG={item.SVG}
                       Title={item.Title}
                       URL={item.LinkURL}
@@ -205,7 +206,6 @@ const Home = () => {
                   return (
                     <ServiceBox
                       Body={item.Body}
-                      LinkText={item.LinkText}
                       SVG={item.SVG}
                       Title={item.Title}
                       URL={item.LinkURL}
@@ -358,7 +358,12 @@ const Home = () => {
                         for over 65 years.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-black secondary-hover" />
+                        <ButtonSolid
+                          text="Visit site"
+                          className="bg-primary color-black secondary-hover"
+                          linkTo="https://www.nakhal.com/"
+                          blank={true}
+                        />
                       </div>
                     </div>
                   </div>
@@ -378,7 +383,12 @@ const Home = () => {
                         travel.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-black secondary-hover" />
+                        <ButtonSolid
+                          text="Visit site"
+                          className="bg-primary color-black secondary-hover"
+                          linkTo="https://skyjunxion.co/"
+                          blank={true}
+                        />
                       </div>
                     </div>
                   </div>
@@ -398,7 +408,12 @@ const Home = () => {
                         we built them an invoice system.
                       </span>
                       <div className="mt-4">
-                        <ButtonSolid className="bg-primary color-black secondary-hover" />
+                        <ButtonSolid
+                          text="Visit site"
+                          className="bg-primary color-black secondary-hover"
+                          linkTo="https://sentient.dk/"
+                          blank={true}
+                        />
                       </div>
                     </div>
                   </div>

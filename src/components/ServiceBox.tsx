@@ -1,11 +1,5 @@
 import { useState } from "react";
-const ServiceBox = ({
-  Title = "",
-  Body = "",
-  LinkText = "",
-  SVG = "",
-  URL = "",
-}) => {
+const ServiceBox = ({ Title = "", Body = "", SVG = "", URL = "" }) => {
   const [Hovered, setHovered] = useState(false);
   return (
     <>
@@ -32,7 +26,6 @@ const ServiceBox = ({
         <div className="InnerItem Text-Color">
           <div className="text-medium">{Title}</div>
           <div className="">{Body}</div>
-          <div className="">{LinkText}</div>
           <p className={URL}></p>
         </div>
       </li>
