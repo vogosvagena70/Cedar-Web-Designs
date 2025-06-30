@@ -12,7 +12,6 @@ import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile
 import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.avif";
 import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.avif";
 import blueCheck from "../assets/icons/blue-check.avif";
-import forbidden from "../assets/icons/forbidden.avif";
 const Services1 = [
   {
     Title: "Mobile First Design",
