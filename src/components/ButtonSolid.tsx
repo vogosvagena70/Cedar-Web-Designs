@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "../styles/buttonSolid.css";
 
 const ButtonSolid = ({
@@ -13,9 +14,9 @@ const ButtonSolid = ({
   }
   return (
     <>
-      <a href={linkTo} target={blank === true ? "_blank" : ""}>
+      <Link to={linkTo} target={blank === true ? "_blank" : ""}>
         <span className={className}>{text}</span>
-      </a>
+      </Link>
     </>
   );
 };
