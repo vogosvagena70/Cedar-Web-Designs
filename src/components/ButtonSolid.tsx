@@ -14,7 +14,7 @@ const ButtonSolid = ({
   }
   return (
     <>
-      <Link to={linkTo} target={blank === true ? "_blank" : ""}>
+      <Link to={linkTo} target={blank ? "_blank" : ""}>
         <span className={className}>{text}</span>
       </Link>
     </>

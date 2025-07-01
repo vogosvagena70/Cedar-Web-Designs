@@ -9,8 +9,8 @@ import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <>
-      <Navigation />
       <BrowserRouter>
+        <Navigation />
         <Routes>
           <Route path="Cedar-Web-Designs" element={<Home></Home>}></Route>
           <Route
@@ -18,8 +18,9 @@ function App() {
             element={<ContactUs />}
           ></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
+
       {/* <Header />
       <Body />
       <Footer /> */}
