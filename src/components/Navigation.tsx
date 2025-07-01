@@ -6,6 +6,7 @@ import "../styles/navigation.css";
 import NewCedarBlackLogo from "../assets/images/Logo/NewCedarBlackPNG.png";
 import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 import ButtonSolid from "./ButtonSolid";
+import { Link } from "react-router";
 
 const Navigation = () => {
   const [scrolledPass100, setScrolledPass100] = useState(false);
@@ -77,31 +78,23 @@ const Navigation = () => {
                 <ul className="cs-ul ">
                   <li className="cs-li">
                     <a href="#HeroSection" className="Text-Color nav-text">
-                      Home
+                      <Link
+                        to="/Cedar-Web-Designs"
+                        className="Text-Color nav-text"
+                      >
+                        Home
+                      </Link>
                     </a>
                   </li>
                   <li className="cs-li">
-                    <a href="#AboutUs" className="Text-Color nav-text">
-                      About us
+                    <a className="Text-Color nav-text">
+                      <Link
+                        to="/Cedar-Web-Designs/ContactUs"
+                        className="Text-Color nav-text"
+                      >
+                        Contact us
+                      </Link>
                     </a>
-                  </li>
-                  <li className="cs-li">
-                    <a href="#Services" className="Text-Color nav-text">
-                      Services
-                    </a>
-                  </li>
-                  <li className="cs-li">
-                    <a href="#Portfolio" className="Text-Color nav-text">
-                      Our Work
-                    </a>
-                  </li>
-                  <li className="cs-li">
-                    <a href="#pricing" className="Text-Color nav-text">
-                      Pricing
-                    </a>
-                  </li>
-                  <li className="cs-li">
-                    <a className="Text-Color nav-text">Contact</a>
                   </li>
                 </ul>
               </div>

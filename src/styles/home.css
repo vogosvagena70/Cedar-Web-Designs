@@ -1127,7 +1127,7 @@ position: relative;
     right: 90%;
   }
   2%{
-    opacity: 0.1;
+    opacity: 0;
     top: 90%;
     right: 40%;
   }
@@ -1188,3 +1188,155 @@ position: relative;
 }
 
  
+
+
+.ContactUsWrapper{
+    background-color: var(--clr-bg);
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    margin-top: -1px; 
+    @media (max-width: 500px) {
+         
+        padding-left: 10px;
+    padding-right: 10px;
+    } 
+}
+
+.ContactUsContainer{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    display: flex; 
+    margin-left:80px;
+    margin-right:80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: 1300px) {
+        flex-direction: column;
+        gap:10rem;
+        align-items: center;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    @media (max-width: 1015px) {
+        
+        
+    }
+}
+
+.ContactUs{
+    max-width: 500px;
+    z-index: 99;
+}
+ 
+
+.ContactusFiller{
+    width: 100%;
+    height: 300px;
+    background-color: var(--clr-foreground);
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px; 
+
+    @media (max-width: 500px) {
+        height: 200px;
+        
+    } 
+}
+
+.ContactUsTitle{
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    z-index: 5;
+
+}
+
+.ContactForm{
+    background-color: var(--clr-bg-reviews);
+    padding:50px;
+    width: 40%;
+    max-width: 36.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (max-width: 1300px) {
+        width: 100%; 
+        padding:20px;
+    }
+}
+.ContactFormContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 100rem;
+
+    
+}
+
+.ContactUsField{
+    display: flex;
+    flex-direction: column; 
+}
+
+.Input{
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+    border: none;  
+    resize: vertical;
+}
+
+.dark .Input{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.SubmitButton{
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.ContactusItem{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ContactusList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 50px;
+}
+
+.ContactusItem > .ContactusIcon{
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    padding: 15px;
+    fill: black; 
+}
+
+.dark .ContactusItem > svg{
+    fill: white;
+    border: 1px solid white;
+}
+
+.ContactusItem > .ContactusIcon2{
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    padding: 15px; 
+} 
+
+.ContactusFormTitle{
+    font-size: clamp(1.25rem, 3vw, 2.4375rem);
+}
