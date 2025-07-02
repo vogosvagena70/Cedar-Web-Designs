@@ -137,7 +137,7 @@ const Home = () => {
                 <div>
                   <ButtonSolid
                     className=" bg-primary color-black"
-                    linkTo="/Cedar-Web-Designs/ContactUs"
+                    linkTo="/ContactUs"
                   />
                 </div>
               </div>
