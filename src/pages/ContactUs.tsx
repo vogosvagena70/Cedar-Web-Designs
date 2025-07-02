@@ -2,11 +2,17 @@ import ButtonSolid from "../components/ButtonSolid";
 import "../styles/home.css";
 import "../styles/fontsizes.css";
 import { useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [state, handleSubmit] = useForm("meokdool");
+  if (state.succeeded) {
+    console.log(state.errors);
+  }
 
   return (
     <>
@@ -138,28 +144,45 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <form className="ContactForm">
+            <form
+              className="ContactForm"
+              onSubmit={handleSubmit}
+              action="https://formspree.io/f/meokdool"
+              method="post"
+            >
               <h2 className="Text-Color ContactusFormTitle">
                 Make Appointment
               </h2>
               <div className="ContactUsField">
                 <span className="Text-Color">Name</span>
-                <input type="text" placeholder="Name" className="Input"></input>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="Input"
+                  name="name"
+                ></input>
               </div>
               <div className="ContactUsField">
                 <span className="Text-Color">Email</span>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email"
                   className="Input"
+                  name="email"
                 ></input>
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
               <div className="ContactUsField">
                 <span className="Text-Color">Phone</span>
                 <input
-                  type="text"
+                  type="phone number"
                   placeholder="Phone"
                   className="Input"
+                  name="phone"
                 ></input>
               </div>
               <div className="ContactUsField">
@@ -168,16 +191,32 @@ const ContactUs = () => {
                   id="ContactusMessage"
                   placeholder="Write Message..."
                   className="Input"
+                  name="message"
                 ></textarea>
-              </div>
-              <div className="mt-4">
-                <ButtonSolid
-                  text="Submit"
-                  className="bg-primary color-black secondary-hover "
-                  linkTo=""
-                  blank={false}
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
                 />
               </div>
+              <div className="mt-4">
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="bg-primary color-black secondary-hover cs-button-solid bg-white"
+                >
+                  Submit
+                </button>
+              </div>
+
+              {state.succeeded === true ? (
+                <p className="Text-Color">
+                  Thank you for submitting! We will contact you as soon as
+                  possible.
+                </p>
+              ) : (
+                ""
+              )}
             </form>
           </div>
         </div>

@@ -3,6 +3,7 @@
     padding: 1rem 2rem;
     border-radius: 3.75rem; 
     font-weight: bold;
+    font-size: clamp(10px,1rem,15px);
 }
 
 .bg-white{
