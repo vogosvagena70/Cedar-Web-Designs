@@ -122,7 +122,7 @@ const Home = () => {
               <span className="hero-top">Custom Designs, Custom Coded</span>
               <span>
                 <h1 className="color-white hero-title font-XL">
-                  Small Business Web Designe
+                  Small Business Web Designer
                 </h1>
               </span>
               <div className="hero-text-container">
