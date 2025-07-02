@@ -114,7 +114,7 @@ const ContactUs = () => {
                       <h2 className="Text-Color">Email</h2>
                       <span className="Text-Color">
                         <a
-                          href="emailto:mhd.bassel.a70@gmail.com"
+                          href="mailto:mhd.bassel.a70@gmail.com"
                           className="FooterContactUnits Text-Color"
                         >
                           mhd.bassel.a70@gmail.com
