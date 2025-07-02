@@ -78,20 +78,14 @@ const Navigation = () => {
                 <ul className="cs-ul ">
                   <li className="cs-li">
                     <a href="#HeroSection" className="Text-Color nav-text">
-                      <Link
-                        to="/Cedar-Web-Designs"
-                        className="Text-Color nav-text"
-                      >
+                      <Link to="/" className="Text-Color nav-text">
                         Home
                       </Link>
                     </a>
                   </li>
                   <li className="cs-li">
                     <a className="Text-Color nav-text">
-                      <Link
-                        to="/Cedar-Web-Designs/ContactUs"
-                        className="Text-Color nav-text"
-                      >
+                      <Link to="/ContactUs" className="Text-Color nav-text">
                         Contact us
                       </Link>
                     </a>
@@ -100,7 +94,10 @@ const Navigation = () => {
               </div>
             </nav>
             <div className="position-relative nav-button">
-              <ButtonSolid className="bg-primary color-black secondary-hover" />
+              <ButtonSolid
+                className="bg-primary color-black secondary-hover"
+                linkTo="/ContactUs"
+              />
             </div>
             <span className="ThemeContainer" onClick={ToggleTheme}>
               <svg

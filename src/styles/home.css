@@ -1293,7 +1293,7 @@ position: relative;
     padding-top: 1rem;
     color: white;
     border: none;  
-    resize: vertical;
+    resize: none;
 }
 
 .dark .Input{
