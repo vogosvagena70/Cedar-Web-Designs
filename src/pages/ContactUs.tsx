@@ -85,7 +85,14 @@ const ContactUs = () => {
                     </svg>
                     <div>
                       <h2 className="Text-Color">PHONE</h2>
-                      <span className="Text-Color">+63 (9) 060672336</span>
+                      <span className="">
+                        <a
+                          href="tel:+639060672336"
+                          className="FooterContactUnits Text-Color"
+                        >
+                          +63 (9) 060672336
+                        </a>
+                      </span>
                     </div>
                   </li>
                   <li className="ContactusItem">
@@ -106,7 +113,12 @@ const ContactUs = () => {
                     <div>
                       <h2 className="Text-Color">Email</h2>
                       <span className="Text-Color">
-                        mhd.bassel.a70@gmail.com
+                        <a
+                          href="emailto:mhd.bassel.a70@gmail.com"
+                          className="FooterContactUnits Text-Color"
+                        >
+                          mhd.bassel.a70@gmail.com
+                        </a>
                       </span>
                     </div>
                   </li>

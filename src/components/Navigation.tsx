@@ -16,11 +16,18 @@ const Navigation = () => {
     document.body.classList = "";
     if (theme === "light") {
       setTheme("dark");
+      localStorage.setItem("selectedTheme", "dark");
       document.body.classList = "dark";
     } else {
       setTheme("light");
+      localStorage.setItem("selectedTheme", "light");
     }
   };
+
+  //const selectedTheme = localStorage.getItem("selectedTheme");
+  // if (selectedTheme === "dark") {
+  //   setTheme("dark");
+  // }
 
   useEffect(() => {
     const handleScroll = () => {

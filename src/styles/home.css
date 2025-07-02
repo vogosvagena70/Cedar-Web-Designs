@@ -1291,13 +1291,14 @@ position: relative;
     border-radius: 0.5rem;
     padding-left: 1rem;
     padding-top: 1rem;
-    color: white;
+    color: black;
     border: none;  
     resize: none;
 }
 
 .dark .Input{
     background-color: rgba(255, 255, 255, 0.05);
+    color: white;
 }
 
 .SubmitButton{
