@@ -44,34 +44,40 @@ const Navigation = () => {
           }
         >
           <div className="container">
-            <a className="LogoContainer">
-              <img
-                alt="logo"
-                src={NewCedarWhiteLogo}
-                decoding="async"
-                aria-hidden="true"
-                loading="lazy"
-                className="nav-logo"
-                height="43"
-                width="197"
-              ></img>
-              <img
-                alt="logo"
-                src={NewCedarBlackLogo}
-                decoding="async"
-                aria-hidden="true"
-                loading="lazy"
-                className="nav-logo-black"
-                height="43"
-                width="197"
-              ></img>
-              {/* <CedarLogoComp /> */}
-              <div className="neon" aria-hidden="true" aria-label="after dark">
-                <span>A</span> <span>f</span> <span>t</span> <span>e</span>{" "}
-                <span>r</span> <span>D</span> <span>a</span> <span>r</span>{" "}
-                <span>k</span>
-              </div>
-            </a>
+            <Link to="/">
+              <a className="LogoContainer">
+                <img
+                  alt="logo"
+                  src={NewCedarWhiteLogo}
+                  decoding="async"
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="nav-logo"
+                  height="43"
+                  width="197"
+                ></img>
+                <img
+                  alt="logo"
+                  src={NewCedarBlackLogo}
+                  decoding="async"
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="nav-logo-black"
+                  height="43"
+                  width="197"
+                ></img>
+                {/* <CedarLogoComp /> */}
+                <div
+                  className="neon"
+                  aria-hidden="true"
+                  aria-label="after dark"
+                >
+                  <span>A</span> <span>f</span> <span>t</span> <span>e</span>{" "}
+                  <span>r</span> <span>D</span> <span>a</span> <span>r</span>{" "}
+                  <span>k</span>
+                </div>
+              </a>
+            </Link>
 
             <nav className="NavBar">
               <div className="ulContainer">
