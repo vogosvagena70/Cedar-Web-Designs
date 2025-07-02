@@ -272,3 +272,11 @@ a{
     .LogoContainer{
         position: relative;
     }
+
+    .RightContainer{
+        
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    }
