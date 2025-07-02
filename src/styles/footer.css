@@ -85,4 +85,5 @@
 
 .FooterContactUnits{
     font-weight: normal;
+    font-size: clamp(15px,1rem,20px);
 }
