@@ -12,11 +12,8 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="Cedar-Web-Designs" element={<Home></Home>}></Route>
-          <Route
-            path="Cedar-Web-Designs/ContactUs"
-            element={<ContactUs />}
-          ></Route>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/ContactUs" element={<ContactUs />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
