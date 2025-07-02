@@ -12,6 +12,7 @@ import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile
 import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.avif";
 import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.avif";
 import blueCheck from "../assets/icons/blue-check.avif";
+import { useEffect } from "react";
 const Services1 = [
   {
     Title: "Mobile First Design",
@@ -216,7 +217,10 @@ const Home = () => {
             </div>
           </div>
           <div className="put-center">
-            <ButtonSolid className="bg-primary color-black secondary-hover" />
+            <ButtonSolid
+              className="bg-primary color-black secondary-hover"
+              linkTo="/ContactUs"
+            />
           </div>
         </div>
       </section>
@@ -299,7 +303,10 @@ const Home = () => {
                 </li>
               </ul>
               <div className="mt-4">
-                <ButtonSolid className="bg-primary color-black secondary-hover" />
+                <ButtonSolid
+                  className="bg-primary color-black secondary-hover"
+                  linkTo="/ContactUs"
+                />
               </div>
             </div>
             <div className="WhatWeOfferImageContainer">
@@ -542,7 +549,10 @@ const Home = () => {
                   </span>
                 </div>
                 <div className="pb-5">
-                  <ButtonSolid className="bg-primary color-black secondary-hover" />
+                  <ButtonSolid
+                    className="bg-primary color-black secondary-hover"
+                    linkTo="/ContactUs"
+                  />
                 </div>
               </div>
               <div className="PricingItem bg-color-darkblue-pricing color-white NeonBorder">
@@ -619,7 +629,10 @@ const Home = () => {
                   </span>
                 </div>
                 <div className="pb-5">
-                  <ButtonSolid className="bg-white color-black" />
+                  <ButtonSolid
+                    className="bg-white color-black"
+                    linkTo="/ContactUs"
+                  />
                 </div>
               </div>
               <div className="PricingItem bg-color-white-pricing">
@@ -724,7 +737,10 @@ const Home = () => {
                   </span>
                 </div>
                 <div className="pb-5">
-                  <ButtonSolid className="bg-primary color-black secondary-hover" />
+                  <ButtonSolid
+                    className="bg-primary color-black secondary-hover"
+                    linkTo="/ContactUs"
+                  />
                 </div>
               </div>
             </div>
