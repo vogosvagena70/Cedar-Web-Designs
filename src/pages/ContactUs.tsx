@@ -1,4 +1,3 @@
-import ButtonSolid from "../components/ButtonSolid";
 import "../styles/home.css";
 import "../styles/fontsizes.css";
 import { useEffect } from "react";
