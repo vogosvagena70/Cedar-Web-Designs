@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "../styles/home.css";
 import "../styles/fontsizes.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactUs = () => {
@@ -9,9 +10,22 @@ const ContactUs = () => {
   }, []);
 
   const [state, handleSubmit] = useForm("meokdool");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
   if (state.succeeded) {
     console.log(state.errors);
+    if (!submitted) setSubmitted(true);
   }
+
+  useEffect(() => {
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  }, [submitted]);
 
   return (
     <>
@@ -73,6 +87,8 @@ const ContactUs = () => {
                   placeholder="Name"
                   className="Input"
                   name="name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                 ></input>
               </div>
               <div className="ContactUsField">
@@ -82,6 +98,8 @@ const ContactUs = () => {
                   placeholder="Email"
                   className="Input"
                   name="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 ></input>
                 <ValidationError
                   prefix="Email"
@@ -96,6 +114,8 @@ const ContactUs = () => {
                   placeholder="Phone"
                   className="Input"
                   name="phone"
+                  onChange={(e) => setPhone(e.target.value)}
+                  value={phone}
                 ></input>
               </div>
               <div className="ContactUsField">
@@ -105,6 +125,8 @@ const ContactUs = () => {
                   placeholder="Write Message..."
                   className="Input"
                   name="message"
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
                 ></textarea>
                 <ValidationError
                   prefix="Message"
