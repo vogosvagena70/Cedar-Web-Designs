@@ -57,6 +57,80 @@ const ContactUs = () => {
       <section id="ContactUs">
         <div className="ContactUsWrapper">
           <div className="ContactUsContainer">
+            <form
+              className="ContactForm"
+              onSubmit={handleSubmit}
+              action="https://formspree.io/f/meokdool"
+              method="post"
+            >
+              <h2 className="Text-Color ContactusFormTitle">
+                Make Appointment
+              </h2>
+              <div className="ContactUsField">
+                <span className="Text-Color">Name</span>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="Input"
+                  name="name"
+                ></input>
+              </div>
+              <div className="ContactUsField">
+                <span className="Text-Color">Email</span>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="Input"
+                  name="email"
+                ></input>
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+              </div>
+              <div className="ContactUsField">
+                <span className="Text-Color">Phone</span>
+                <input
+                  type="phone number"
+                  placeholder="Phone"
+                  className="Input"
+                  name="phone"
+                ></input>
+              </div>
+              <div className="ContactUsField">
+                <span className="Text-Color">Message</span>
+                <textarea
+                  id="ContactusMessage"
+                  placeholder="Write Message..."
+                  className="Input"
+                  name="message"
+                ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+              </div>
+              <div className="mt-4">
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="bg-primary color-black secondary-hover cs-button-solid bg-white"
+                >
+                  Submit
+                </button>
+              </div>
+
+              {state.succeeded === true ? (
+                <p className="Text-Color">
+                  Thank you for submitting! We will contact you as soon as
+                  possible.
+                </p>
+              ) : (
+                ""
+              )}
+            </form>
             <div className="ContactUs color-white">
               <span className="Topper">Contact us</span>
               <span>
@@ -154,81 +228,6 @@ const ContactUs = () => {
                 </ul>
               </div>
             </div>
-
-            <form
-              className="ContactForm"
-              onSubmit={handleSubmit}
-              action="https://formspree.io/f/meokdool"
-              method="post"
-            >
-              <h2 className="Text-Color ContactusFormTitle">
-                Make Appointment
-              </h2>
-              <div className="ContactUsField">
-                <span className="Text-Color">Name</span>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="Input"
-                  name="name"
-                ></input>
-              </div>
-              <div className="ContactUsField">
-                <span className="Text-Color">Email</span>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="Input"
-                  name="email"
-                ></input>
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                />
-              </div>
-              <div className="ContactUsField">
-                <span className="Text-Color">Phone</span>
-                <input
-                  type="phone number"
-                  placeholder="Phone"
-                  className="Input"
-                  name="phone"
-                ></input>
-              </div>
-              <div className="ContactUsField">
-                <span className="Text-Color">Message</span>
-                <textarea
-                  id="ContactusMessage"
-                  placeholder="Write Message..."
-                  className="Input"
-                  name="message"
-                ></textarea>
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
-              </div>
-              <div className="mt-4">
-                <button
-                  type="submit"
-                  disabled={state.submitting}
-                  className="bg-primary color-black secondary-hover cs-button-solid bg-white"
-                >
-                  Submit
-                </button>
-              </div>
-
-              {state.succeeded === true ? (
-                <p className="Text-Color">
-                  Thank you for submitting! We will contact you as soon as
-                  possible.
-                </p>
-              ) : (
-                ""
-              )}
-            </form>
           </div>
         </div>
       </section>
