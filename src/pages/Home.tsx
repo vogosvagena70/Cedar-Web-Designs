@@ -178,13 +178,13 @@ const Home = () => {
               </div>
               <div className="text-align-center pt-2 Text-Color">
                 At Cedar Web Designs, we specialize in small business web design
-                and development for clients anywhere in the US and Canada. Every
-                line of code is written by hand to ensure the best performance
-                and make Google happy, which helps bring in more customers to
-                your site and bring more revenue to your business. We also
-                manage the edits for you and will never leave you high and dry.
-                Our goal is to create long term relationships with our clients
-                and see them grow over time.
+                and development for clients anywhere. Every line of code is
+                written by hand to ensure the best performance and make Google
+                happy, which helps bring in more customers to your site and
+                bring more revenue to your business. We also manage the edits
+                for you and will never leave you high and dry. Our goal is to
+                create long term relationships with our clients and see them
+                grow over time.
               </div>
             </div>
             <div className="ListWrapper">
@@ -338,10 +338,10 @@ const Home = () => {
               </div>
               <div className="PortfolioDescriptionRight">
                 <span className="Text-Color">
-                  We have worked with clients all over the US and Canada for
-                  home services contractors, restaurants, consulting agencies,
-                  start ups, dermatologists, doctors, accountants, and more. No
-                  matter what your business is, we can build a website that is
+                  We have worked with clients all over the world for home
+                  services contractors, restaurants, consulting agencies, start
+                  ups, dermatologists, doctors, accountants, and more. No matter
+                  what your business is, we can build a website that is
                   effective, beautiful, performant, and tailored to your
                   industry.
                 </span>
