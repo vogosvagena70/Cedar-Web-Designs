@@ -54,7 +54,7 @@ const Navigation = () => {
             <Link to="/">
               <a className="LogoContainer">
                 <img
-                  alt="logo"
+                  alt="Cedar web design white logo"
                   src={NewCedarWhiteLogo}
                   decoding="async"
                   aria-hidden="true"
@@ -64,7 +64,7 @@ const Navigation = () => {
                   width="197"
                 ></img>
                 <img
-                  alt="logo"
+                  alt="Cedar web design black logo"
                   src={NewCedarBlackLogo}
                   decoding="async"
                   aria-hidden="true"

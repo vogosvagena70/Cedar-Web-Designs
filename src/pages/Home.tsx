@@ -6,12 +6,12 @@ import basselItani from "../assets/images/bassel-itani.avif";
 import Chezka from "../assets/images/chezka.avif";
 import Hicham from "../assets/images/hicham.jpeg";
 import Ibrahim from "../assets/images/ibrahim.jpeg";
-import check from "../assets/images/check.avif";
 import ServiceBox from "../components/ServiceBox";
 import NakhalLaptop from "../assets/images/Portfolio/Nakhal/Nakhal-Laptop-Mobile.avif";
 import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjunxion-Laptop-Mobile.avif";
 import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.avif";
-import blueCheck from "../assets/icons/blue-check.avif";
+import Check from "../components/Check";
+import BlueCheck from "../components/BlueCheck";
 const Services1 = [
   {
     Title: "Mobile First Design",
@@ -149,6 +149,7 @@ const Home = () => {
                 src={mockup}
                 width={636}
                 height={593}
+                alt="picture of a desktop and mobile mockup of Nakhal.com and Sentient.dk"
               ></img>
             </div>
           </div>
@@ -243,7 +244,7 @@ const Home = () => {
               <ul className="OfferList mt-4">
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">100% Secure</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -253,7 +254,7 @@ const Home = () => {
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">Designed From The Ground Up</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -262,7 +263,7 @@ const Home = () => {
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">100% Speed Score</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -272,7 +273,7 @@ const Home = () => {
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">Money Back Gurantee</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -282,7 +283,7 @@ const Home = () => {
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">24/7 Support</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -292,7 +293,7 @@ const Home = () => {
                 </li>
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
-                    <img src={check} height={24} width={24}></img>
+                    <Check />
                     <h3 className="Text-Color">SEO Is What We Do</h3>
                   </div>
                   <div className="OfferDescription Text-Color">
@@ -314,6 +315,7 @@ const Home = () => {
                 src={basselItani}
                 width={650}
                 height={878}
+                alt="Picture of Bassel Itani, owner and developer of cedar web designs"
               ></img>
               <div className="BasselItaniBadge">
                 <div className="BadgeText">
@@ -356,6 +358,7 @@ const Home = () => {
                       src={NakhalLaptop}
                       height={270}
                       width={413}
+                      alt="Image mockup of Nakhal.com"
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Nakhal</h2>
@@ -382,6 +385,7 @@ const Home = () => {
                       src={SkyjunxionLaptopMobile}
                       height={270}
                       width={413}
+                      alt="Image mockup of Skyjunxion.co"
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Skyjunxion</h2>
@@ -408,6 +412,7 @@ const Home = () => {
                       src={SentientLaptopMobile}
                       height={270}
                       width={413}
+                      alt="Image mockup of Sentient.dk"
                     ></img>
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Sentient</h2>
@@ -451,48 +456,23 @@ const Home = () => {
                 <ul className="PricingFeaturesList">
                   <li className="PricingFeature Text-Color">
                     Design And Development
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     $25/mo Hosting
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     $100 Fee Per Page After 5
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     +$50/mo Unlimited edits Add-on
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     +$250 To Add A Blog
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     24/7 Support
@@ -563,66 +543,31 @@ const Home = () => {
                 <ul className="PricingFeaturesList">
                   <li className="PricingFeature  ">
                     Design And Development
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     Includes Hosting
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     $100 Fee Per Page After 5
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     Unlimited Edits
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     +$250 To Add A Blog
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     24/7 Support
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
                     Lifetime Updates
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                 </ul>
 
@@ -643,48 +588,23 @@ const Home = () => {
                 <ul className="PricingFeaturesList">
                   <li className="PricingFeature Text-Color">
                     Design And Development
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     $25/mo Hosting
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     $100 Fee Per Page After 5
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     +$50/mo Unlimited edits Add-on
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     +$250 To Add A Blog
-                    <img
-                      className="float-right"
-                      src={blueCheck}
-                      height={18}
-                      width={18}
-                    ></img>
+                    <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
                     24/7 Support
@@ -766,6 +686,7 @@ const Home = () => {
                   src={Chezka}
                   width={150}
                   height={150}
+                  alt="Image of Chezka"
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  Text-Color">
@@ -783,6 +704,7 @@ const Home = () => {
                   src={Ibrahim}
                   width={150}
                   height={150}
+                  alt="Image of Ibrahim"
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  Text-Color">
@@ -802,6 +724,7 @@ const Home = () => {
                   width={150}
                   height={150}
                   unselectable="on"
+                  alt="Image of Hicham"
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  Text-Color">

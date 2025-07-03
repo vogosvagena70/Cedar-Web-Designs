@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 className="Logo"
                 src={NewCedarWhiteLogo}
-                alt="Cedar Logo"
+                alt="Cedar web design white logo"
               ></img>
               <div className="Footer1Description">
                 We believe small businesses deserve better. Just because you’re
