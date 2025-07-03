@@ -52,7 +52,12 @@ const Navigation = () => {
         >
           <div className="container">
             <Link to="/">
-              <a className="LogoContainer" href="#HeroSection">
+              <a
+                className="LogoContainer"
+                href="#HeroSection"
+                data-name="LogoContainer"
+                id="LogoContainer"
+              >
                 <img
                   alt="Cedar web design white logo"
                   src={NewCedarWhiteLogo}
