@@ -45,8 +45,8 @@ const Services2 = [
     SVG: "seo",
   },
   {
-    Title: "Google PPC Ads",
-    Body: "We also offer Pay-Per-Click Google ads creation and management with our Google Ads expert who can create effective ad campaigns to maximize your ROI.",
+    Title: "Social Media Ads",
+    Body: "We also offer Pay-Per-Click Social Media ads creation and management with our Social Media Ads expert who can create effective ad campaigns to maximize your ROI.",
     LinkText: "More About Ads",
     LinkURL: "",
     SVG: "ads",
@@ -360,8 +360,9 @@ const Home = () => {
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Nakhal</h2>
                       <span className="Text-Color">
-                        Nakhal is the largest travel agency company in Lebanon
-                        for over 65 years.
+                        Nakhal, Lebanon's leading privately-owned travel agency,
+                        has been serving travelers for over 60 years and has
+                        been a valued client for more than 5 years.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid
@@ -385,8 +386,9 @@ const Home = () => {
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Skyjunxion</h2>
                       <span className="Text-Color">
-                        Skyjunxion is the leading agency in B2B solutions for
-                        travel.
+                        For Skyjunxion, a B2B travel agency, we built a
+                        streamlined platform that allows companies to easily
+                        manage and approve employee flight requests.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid
@@ -410,8 +412,10 @@ const Home = () => {
                     <div className="PortfolioItemDescriptionContainer">
                       <h2 className="Text-Color">Sentient</h2>
                       <span className="Text-Color">
-                        For Sentient, we had a much larger scope of work where
-                        we built them an invoice system.
+                        For Sentient, a new invoicing company in the EU, we
+                        developed their complete invoicing system from the
+                        ground up, giving them full control with a custom-built,
+                        user-friendly platform.
                       </span>
                       <div className="mt-4">
                         <ButtonSolid
