@@ -230,7 +230,7 @@ const Home = () => {
             <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
               <div className="WhatWeOfferTitle Text-Color">
-                Websites Starting At $0 Down And $125 Per Month
+                Websites Starting At $0 Down And $175 Per Month
               </div>
               <div className="mt-2 WhatWeOfferDescription Text-Color">
                 We offer $0 down for a standard 5 page small business website.
