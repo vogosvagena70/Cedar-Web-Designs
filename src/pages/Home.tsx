@@ -128,8 +128,8 @@ const Home = () => {
               <div className="hero-text-container">
                 <span className="color-white hero-text">
                   No page builders or WordPress. We offer 100% hand-coded
-                  websites with superior results starting at $150/mo as well as
-                  Google Ads and SEO services.
+                  websites with superior results starting at ₱8,700/mo as well
+                  as Google Ads and SEO services.
                 </span>
               </div>
 
@@ -231,10 +231,10 @@ const Home = () => {
             <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
               <div className="WhatWeOfferTitle Text-Color">
-                Websites Starting At $0 Down And $150 Per Month
+                Websites Starting At ₱0 Down And ₱8,700 Per Month
               </div>
               <div className="mt-2 WhatWeOfferDescription Text-Color">
-                We offer $0 down for a standard 5 page small business website.
+                We offer ₱0 down for a standard 5 page small business website.
                 If you need more than that then we have to do custom pricing
                 based on the scope of work, number of additional pages, and time
                 involved. <strong>6 month minimum contract</strong>. Includes
@@ -459,19 +459,19 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    $25/mo Hosting
+                    ₱1,400/mo Hosting
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    $100 Fee Per Page After 5
+                    ₱5,800 Fee Per Page After 5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +$50/mo Unlimited edits Add-on
+                    +₱3,000/mo Unlimited edits Add-on
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +$250 To Add A Blog
+                    +₱14,500 To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
@@ -525,9 +525,9 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    $3800
+                    ₱220k
                     <span className="PIPDuration Text-Color">
-                      +$25/mo Hosting
+                      +₱1,450/mo Hosting
                     </span>
                   </span>
                 </div>
@@ -550,7 +550,7 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
-                    $100 Fee Per Page After 5
+                    ₱5,800 Fee Per Page After 5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
@@ -558,7 +558,7 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
-                    +$250 To Add A Blog
+                    +₱14,500 To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
@@ -573,7 +573,7 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle">
-                    $150<span className="PIPDuration">Per Month</span>
+                    ₱8,700<span className="PIPDuration">Per Month</span>
                   </span>
                 </div>
                 <div className="pb-5">
@@ -591,19 +591,19 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    $25/mo Hosting
+                    ₱1,450/mo Hosting
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    $100 Fee Per Page After 5
+                    ₱5,800 Fee Per Page After 5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +$50/mo Unlimited edits Add-on
+                    +₱2,900/mo Unlimited edits Add-on
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +$250 To Add A Blog
+                    +₱14,500 To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
@@ -656,7 +656,8 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    $8k<span className="PIPDuration Text-Color">Starting</span>
+                    ₱464k
+                    <span className="PIPDuration Text-Color">Starting</span>
                   </span>
                 </div>
                 <div className="pb-5">
