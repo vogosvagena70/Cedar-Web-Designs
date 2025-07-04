@@ -128,7 +128,7 @@ const Home = () => {
               <div className="hero-text-container">
                 <span className="color-white hero-text">
                   No page builders or WordPress. We offer 100% hand-coded
-                  websites with superior results starting at $175/mo as well as
+                  websites with superior results starting at $150/mo as well as
                   Google Ads and SEO services.
                 </span>
               </div>
@@ -231,13 +231,13 @@ const Home = () => {
             <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
               <div className="WhatWeOfferTitle Text-Color">
-                Websites Starting At $0 Down And $175 Per Month
+                Websites Starting At $0 Down And $150 Per Month
               </div>
               <div className="mt-2 WhatWeOfferDescription Text-Color">
                 We offer $0 down for a standard 5 page small business website.
                 If you need more than that then we have to do custom pricing
                 based on the scope of work, number of additional pages, and time
-                involved. <strong>12 month minimum contract</strong>. Includes
+                involved. <strong>6 month minimum contract</strong>. Includes
                 design, development, hosting, unlimited edits, 24/7 support, and
                 lifetime updates.
               </div>
@@ -573,7 +573,7 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle">
-                    $175<span className="PIPDuration">Per Month</span>
+                    $150<span className="PIPDuration">Per Month</span>
                   </span>
                 </div>
                 <div className="pb-5">
