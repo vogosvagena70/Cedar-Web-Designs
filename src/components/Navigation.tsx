@@ -11,6 +11,7 @@ import { Link } from "react-router";
 const Navigation = () => {
   const [scrolledPass100, setScrolledPass100] = useState(false);
   const [theme, setTheme] = useState("light");
+  const [navMenuOpen, setNavMenuOpen] = useState(false);
 
   const ToggleTheme = () => {
     document.body.classList = "";
@@ -204,6 +205,66 @@ const Navigation = () => {
                   />
                 </svg>
               </span>
+              <div onClick={() => setNavMenuOpen(!navMenuOpen)}>
+                <div>
+                  <svg
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="HamburgerSVG"
+                  >
+                    <path
+                      d="M4 18L20 18"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M4 12L20 12"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M4 6L20 6"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={
+                navMenuOpen === true
+                  ? "MobileNavMenuContainerOpen"
+                  : "MobileNavMenuContainer"
+              }
+            >
+              <div className="MobileNavMenu">
+                <ul className="MobileNavMenuList">
+                  <li>
+                    <Link
+                      to="/"
+                      className="Text-Color MobileLink"
+                      onClick={() => setNavMenuOpen(false)}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <Link
+                    to="/ContactUs"
+                    className="Text-Color MobileLink"
+                    onClick={() => setNavMenuOpen(false)}
+                  >
+                    Contact Us
+                  </Link>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
