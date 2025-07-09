@@ -65,7 +65,7 @@ const Services2 = [
 
 const Home = () => {
   const currency = useLocalizedCurrency();
-  preload("../assets/images/mockup.avif", { as: "image" });
+  preload(mockup, { as: "image" });
   return (
     <>
       <h1 className="visually-hidden">Cedar Web Designs</h1>
