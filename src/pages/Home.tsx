@@ -12,6 +12,7 @@ import SkyjunxionLaptopMobile from "../assets/images/Portfolio/Skyjunxion/Skyjun
 import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-Laptop-Mobile.avif";
 import Check from "../components/Check";
 import BlueCheck from "../components/BlueCheck";
+import { useEffect, useState } from "react";
 const Services1 = [
   {
     Title: "Mobile First Design",
@@ -61,6 +62,8 @@ const Services2 = [
 ];
 
 const Home = () => {
+  const currency = useLocalizedCurrency();
+
   return (
     <>
       <h1 className="visually-hidden">Cedar Web Designs</h1>
@@ -734,7 +737,9 @@ const Home = () => {
                     be happier. He’s easy to collaborate with and gets things
                     done right.
                   </span>
-                  <h1 className="Reviewer Text-Color">Hicham Nehme</h1>
+                  <h1 className="Reviewer Text-Color">
+                    Hicham {currency} Nehme
+                  </h1>
                 </div>
               </div>
             </div>
@@ -744,5 +749,28 @@ const Home = () => {
     </>
   );
 };
+
+function useLocalizedCurrency() {
+  const [currency, setCurrency] = useState<"PHP" | "USD">("USD");
+
+  async function getCountryCode() {
+    try {
+      const res = await fetch("https://ipwho.is/");
+      const data = await res.json();
+      return data.country_code; // e.g. 'PH'
+    } catch {
+      return null; // fallback
+    }
+  }
+  useEffect(() => {
+    getCountryCode().then((code) => {
+      if (code === "PH") {
+        setCurrency("PHP");
+      }
+    });
+  }, []);
+
+  return currency;
+}
 
 export default Home;
