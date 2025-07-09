@@ -63,6 +63,7 @@ const Services2 = [
 const Home = () => {
   return (
     <>
+      <h1 className="visually-hidden">Cedar Web Designs</h1>
       <section className="HeroSection" id="HeroSection">
         <span className="Meteor1"></span>
         <span className="Meteor2"></span>
