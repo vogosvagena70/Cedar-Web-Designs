@@ -252,7 +252,7 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">100% Secure</h3>
+                    <h1 className="Text-Color OfferHeader">100% Secure</h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     Our sites are pure static HTML and CSS, with nothing
@@ -262,7 +262,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">Designed From The Ground Up</h3>
+                    <h1 className="Text-Color OfferHeader">
+                      Designed From The Ground Up
+                    </h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     Our designs are done in-house, giving us complete control.
@@ -271,7 +273,7 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">100% Speed Score</h3>
+                    <h1 className="Text-Color OfferHeader">100% Speed Score</h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     Purpose-built with zero excess, our sites hit top marks on
@@ -281,7 +283,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">Money Back Gurantee</h3>
+                    <h1 className="Text-Color OfferHeader">
+                      Money Back Gurantee
+                    </h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     Don’t love the design? You get your money back and we cancel
@@ -291,7 +295,7 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">24/7 Support</h3>
+                    <h1 className="Text-Color OfferHeader">24/7 Support</h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     Call or text anytime. You get straight to me — the owner and
@@ -301,7 +305,9 @@ const Home = () => {
                 <li className="OfferItem">
                   <div className="OfferItemTitle">
                     <Check />
-                    <h3 className="Text-Color">SEO Is What We Do</h3>
+                    <h1 className="Text-Color OfferHeader">
+                      SEO Is What We Do
+                    </h1>
                   </div>
                   <div className="OfferDescription Text-Color">
                     No gimmicks, no BS — just clear SEO explained and real
@@ -534,7 +540,7 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    {currency === "USD" ? "$1500" : "₱85,000"}
+                    {currency === "USD" ? "$1500" : "₱85k"}
                     <span className="PIPDuration Text-Color">
                       +{currency === "USD" ? "$15" : "₱850"}/mo Hosting
                     </span>
