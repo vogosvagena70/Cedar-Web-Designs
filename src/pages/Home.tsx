@@ -13,6 +13,8 @@ import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-L
 import Check from "../components/Check";
 import BlueCheck from "../components/BlueCheck";
 import { useEffect, useState } from "react";
+import { preload } from "react-dom";
+
 const Services1 = [
   {
     Title: "Mobile First Design",
@@ -63,7 +65,7 @@ const Services2 = [
 
 const Home = () => {
   const currency = useLocalizedCurrency();
-
+  preload("../assets/images/mockup.avif", { as: "image" });
   return (
     <>
       <h1 className="visually-hidden">Cedar Web Designs</h1>
