@@ -132,8 +132,9 @@ const Home = () => {
               <div className="hero-text-container">
                 <span className="color-white hero-text">
                   No page builders or WordPress. We offer 100% hand-coded
-                  websites with superior results starting at ₱8,700/mo as well
-                  as Google Ads and SEO services.
+                  websites with superior results starting at{" "}
+                  {currency === "USD" ? "$150" : "₱8,500"}
+                  /mo as well as Google Ads and SEO services.
                 </span>
               </div>
 
@@ -235,14 +236,16 @@ const Home = () => {
             <div className="WhatWeOfferTextContainer ">
               <div className="WhatWeOfferTopper">WHAT WE OFFER</div>
               <div className="WhatWeOfferTitle Text-Color">
-                Websites Starting At ₱0 Down And ₱8,700 Per Month
+                Websites Starting At {currency === "USD" ? "$0" : "₱0"} Down And{" "}
+                {currency === "USD" ? "$150" : "₱8,500"} Per Month
               </div>
               <div className="mt-2 WhatWeOfferDescription Text-Color">
-                We offer ₱0 down for a standard 5 page small business website.
-                If you need more than that then we have to do custom pricing
-                based on the scope of work, number of additional pages, and time
-                involved. <strong>6 month minimum contract</strong>. Includes
-                design, development, hosting, unlimited edits, 24/7 support, and
+                We offer {currency === "USD" ? "$0" : "₱0"} down for a standard
+                5 page small business website. If you need more than that then
+                we have to do custom pricing based on the scope of work, number
+                of additional pages, and time involved.{" "}
+                <strong>6 month minimum contract</strong>. Includes design,
+                development, hosting, unlimited edits, 24/7 support, and
                 lifetime updates.
               </div>
               <ul className="OfferList mt-4">
@@ -463,19 +466,21 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    ₱1,400/mo Hosting
+                    {currency === "USD" ? "$15" : "₱850"}/mo Hosting
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    ₱5,800 Fee Per Page After 5
+                    {currency === "USD" ? "$100" : "₱5,500"} Fee Per Page After
+                    5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +₱3,000/mo Unlimited edits Add-on
+                    +{currency === "USD" ? "$50" : "₱2,800"}/mo Unlimited edits
+                    Add-on
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +₱14,500 To Add A Blog
+                    {currency === "USD" ? "$150" : "₱8,500"} To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
@@ -529,9 +534,9 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    ₱220k
+                    {currency === "USD" ? "$1500" : "₱85,000"}
                     <span className="PIPDuration Text-Color">
-                      +₱1,450/mo Hosting
+                      +{currency === "USD" ? "$15" : "₱850"}/mo Hosting
                     </span>
                   </span>
                 </div>
@@ -554,7 +559,8 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
-                    ₱5,800 Fee Per Page After 5
+                    {currency === "USD" ? "$100" : "₱5,500"} Fee Per Page After
+                    5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
@@ -562,7 +568,7 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
-                    +₱14,500 To Add A Blog
+                    +{currency === "USD" ? "$150" : "₱8,500"} To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature  ">
@@ -577,7 +583,8 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle">
-                    ₱8,700<span className="PIPDuration">Per Month</span>
+                    {currency === "USD" ? "$150" : "₱8,500"}
+                    <span className="PIPDuration">Per Month</span>
                   </span>
                 </div>
                 <div className="pb-5">
@@ -595,19 +602,21 @@ const Home = () => {
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    ₱1,450/mo Hosting
+                    {currency === "USD" ? "$15" : "₱850"}/mo Hosting
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    ₱5,800 Fee Per Page After 5
+                    {currency === "USD" ? "$100" : "₱5,500"} Fee Per Page After
+                    5
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +₱2,900/mo Unlimited edits Add-on
+                    +{currency === "USD" ? "$50" : "₱2,800"}/mo Unlimited edits
+                    Add-on
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
-                    +₱14,500 To Add A Blog
+                    +{currency === "USD" ? "$150" : "₱8,500"} To Add A Blog
                     <BlueCheck />
                   </li>
                   <li className="PricingFeature Text-Color">
@@ -660,7 +669,7 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    ₱464k
+                    {currency === "USD" ? "$8k" : "₱464k"}
                     <span className="PIPDuration Text-Color">Starting</span>
                   </span>
                 </div>
@@ -737,9 +746,7 @@ const Home = () => {
                     be happier. He’s easy to collaborate with and gets things
                     done right.
                   </span>
-                  <h1 className="Reviewer Text-Color">
-                    Hicham {currency} Nehme
-                  </h1>
+                  <h1 className="Reviewer Text-Color">Hicham Nehme</h1>
                 </div>
               </div>
             </div>
