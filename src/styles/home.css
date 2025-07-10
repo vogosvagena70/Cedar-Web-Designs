@@ -1361,3 +1361,7 @@ position: relative;
 .TestBranchMerge{
     
 }
+
+.cs-button-solid{
+    border-color: transparent;
+}

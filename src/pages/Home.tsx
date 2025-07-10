@@ -68,6 +68,14 @@ const Home = () => {
   preload(mockup, { as: "image" });
   return (
     <>
+      <title>
+        Small Business Web Designer | Cedar Web Designs | $0 Down $175 Per Month
+      </title>
+      <meta
+        name="description"
+        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
+      ></meta>
+
       <h1 className="visually-hidden">Cedar Web Designs</h1>
       <section className="HeroSection" id="HeroSection">
         <span className="Meteor1"></span>

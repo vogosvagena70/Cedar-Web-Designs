@@ -29,6 +29,12 @@ const ContactUs = () => {
 
   return (
     <>
+      <title>Contact Us | Cedar Web Designs</title>
+      <meta
+        content="Send us an email and tell us everything you’re looking for in a new website. We reply to all messages within 24 hours. Prefer to talk right away? Give us a call—we’ll pick up if we’re available, or call you back the same day."
+        name="description"
+      ></meta>
+
       <section className="HeroSection" id="HeroSection">
         <span className="Meteor1"></span>
         <span className="Meteor2"></span>
