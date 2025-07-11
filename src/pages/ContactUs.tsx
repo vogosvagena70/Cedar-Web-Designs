@@ -34,7 +34,7 @@ const ContactUs = () => {
         content="Send us an email and tell us everything you’re looking for in a new website. We reply to all messages within 24 hours. Prefer to talk right away? Give us a call—we’ll pick up if we’re available, or call you back the same day."
         name="description"
       ></meta>
-      <link rel="canonical" href="https://www.cedarwebdesigns.com/ContactUs/" />
+      <link rel="canonical" href="https://www.cedarwebdesigns.com/ContactUs" />
 
       {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
       <meta property="og:title" content="Contact Us | Cedar Web Designs" />
