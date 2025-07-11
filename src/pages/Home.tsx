@@ -69,12 +69,23 @@ const Home = () => {
   return (
     <>
       <title>
-        Small Business Web Designer | Cedar Web Designs | $0 Down $175 Per Month
+        Small Business Web Designer | Cedar Web Designs | $0 Down $150 Per Month
       </title>
       <meta
         name="description"
         content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
       ></meta>
+
+      {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
+      <meta
+        property="og:title"
+        content="Small Business Web Designer | Cedar Web Designs | $0 Down $150 Per Month"
+      />
+      <meta
+        property="og:description"
+        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
+      />
+      <meta property="og:url" content="https://www.cedarwebdesigns.com/" />
 
       <h1 className="visually-hidden">Cedar Web Designs</h1>
       <section className="HeroSection" id="HeroSection">

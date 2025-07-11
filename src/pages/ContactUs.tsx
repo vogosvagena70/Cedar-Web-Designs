@@ -35,6 +35,17 @@ const ContactUs = () => {
         name="description"
       ></meta>
 
+      {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
+      <meta property="og:title" content="Contact Us | Cedar Web Designs" />
+      <meta
+        property="og:description"
+        content="Send us an email and tell us everything you’re looking for in a new website. We reply to all messages within 24 hours. Prefer to talk right away? Give us a call—we’ll pick up if we’re available, or call you back the same day."
+      />
+      <meta
+        property="og:url"
+        content="https://www.cedarwebdesigns.com/ContactUs"
+      />
+
       <section className="HeroSection" id="HeroSection">
         <span className="Meteor1"></span>
         <span className="Meteor2"></span>
