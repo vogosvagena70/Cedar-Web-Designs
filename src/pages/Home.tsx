@@ -75,6 +75,7 @@ const Home = () => {
         name="description"
         content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
       ></meta>
+      <link rel="canonical" href="https://www.cedarwebdesigns.com/" />
 
       {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
       <meta
