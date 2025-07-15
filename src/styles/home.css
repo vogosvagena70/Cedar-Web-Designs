@@ -1365,3 +1365,7 @@ position: relative;
 .cs-button-solid{
     border-color: transparent;
 }
+
+.OwnderDeveloper{
+    font-size: clamp(0.8rem,4vw,1.25rem);
+}

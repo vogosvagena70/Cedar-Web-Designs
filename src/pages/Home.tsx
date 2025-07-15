@@ -69,7 +69,7 @@ const Home = () => {
   return (
     <>
       <title>
-        Small Business Web Designer | Cedar Web Designs | $0 Down $150 Per Month
+        Cedar Web Designs | Small Business Web Designer | $0 Down $150 Per Month
       </title>
       <meta
         name="description"
@@ -80,7 +80,7 @@ const Home = () => {
       {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
       <meta
         property="og:title"
-        content="Small Business Web Designer | Cedar Web Designs | $0 Down $150 Per Month"
+        content="Cedar Web Designs | Small Business Web Designer | $0 Down $150 Per Month"
       />
       <meta
         property="og:description"
@@ -355,7 +355,7 @@ const Home = () => {
               <div className="BasselItaniBadge">
                 <div className="BadgeText">
                   <span className="BasselItaniBadgeTitle">BASSEL ITANI</span>
-                  <span>Owner, Developer</span>
+                  <span className="OwnderDeveloper">Owner, Developer</span>
                 </div>
                 <div></div>
               </div>
@@ -697,14 +697,15 @@ const Home = () => {
 
                 <div className="PricingItemPrice">
                   <span className="PIPTitle Text-Color">
-                    {currency === "USD" ? "$8k" : "₱464k"}
-                    <span className="PIPDuration Text-Color">Starting</span>
+                    {currency === "USD" ? "N/A" : "N/A"}
+                    {/* <span className="PIPDuration Text-Color">Starting</span> */}
                   </span>
                 </div>
                 <div className="pb-5">
                   <ButtonSolid
                     className="bg-primary color-black secondary-hover"
                     linkTo="/ContactUs"
+                    text="Coming soon"
                   />
                 </div>
               </div>
