@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
+import SocialMediaAds from "./pages/SocialMediaAds";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/ContactUs" element={<ContactUs />}></Route>
+          <Route path="/SocialMediaAds" element={<SocialMediaAds />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

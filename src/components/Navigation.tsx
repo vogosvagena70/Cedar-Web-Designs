@@ -7,11 +7,14 @@ import NewCedarBlackLogo from "../assets/images/Logo/NewCedarBlackPNG.png";
 import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 import ButtonSolid from "./ButtonSolid";
 import { Link } from "react-router";
+import NavigationBar from "./NavigationBar";
 
 const Navigation = () => {
   const [scrolledPass100, setScrolledPass100] = useState(false);
   const [theme, setTheme] = useState("light");
   const [navMenuOpen, setNavMenuOpen] = useState(false);
+  const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
+  const [mobileServiceMenuOpen, setmobileServiceMenuOpen] = useState(false);
 
   const ToggleTheme = () => {
     document.body.classList = "";
@@ -45,6 +48,7 @@ const Navigation = () => {
 
   return (
     <>
+      {serviceMenuOpen ? "" : ""}
       <div className="HeaderContainer">
         <div
           className={
@@ -94,24 +98,7 @@ const Navigation = () => {
             </Link>
 
             <nav className="NavBar">
-              <div className="ulContainer">
-                <ul className="cs-ul ">
-                  <li className="cs-li">
-                    <a href="#HeroSection" className="Text-Color nav-text">
-                      <Link to="/" className="Text-Color nav-text">
-                        Home
-                      </Link>
-                    </a>
-                  </li>
-                  <li className="cs-li">
-                    <a className="Text-Color nav-text" href="#ContactUs">
-                      <Link to="/ContactUs" className="Text-Color nav-text">
-                        Contact us
-                      </Link>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <NavigationBar />
             </nav>
             <div className="RightContainer">
               <div className="position-relative nav-button">
@@ -134,32 +121,7 @@ const Navigation = () => {
                     fill="#fff"
                   />
                 </svg>
-                {/* <svg
-                width="20px"
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="SVG-Color"
-              >
-                <path
-                  d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
-                  stroke="#fff"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg> */}
-                {/* <svg
-                fill="#000000"
-                width="30px"
-                height="30px"
-                viewBox="0 0 32 32"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M23.395 14.106c2.958-1.383 2.828-6.068 5.758-5.884-4.125-2.74-4.019 3.106-9.089 1.235 1.107-3.068-2.292-6.286-0.091-8.227-4.855 0.979-0.645 5.039-5.555 7.301-1.384-2.958-6.068-2.828-5.884-5.758-2.74 4.125 3.106 4.019 1.235 9.089-3.068-1.107-6.286 2.292-8.227 0.091 0.979 4.855 5.039 0.645 7.301 5.555-2.958 1.384-2.828 6.068-5.758 5.884 4.125 2.74 4.019-3.106 9.089-1.235-1.107 3.068 2.292 6.286 0.091 8.227 4.855-0.979 0.645-5.039 5.555-7.301 1.384 2.958 6.068 2.828 5.884 5.758 2.74-4.125-3.106-4.019-1.235-9.089 3.068 1.107 6.286-2.292 8.226-0.091-0.979-4.855-5.039-0.645-7.301-5.555z"></path>
-              </svg> */}
+
                 <svg
                   width="30px"
                   height="30px"
@@ -248,7 +210,7 @@ const Navigation = () => {
             >
               <div className="MobileNavMenu">
                 <ul className="MobileNavMenuList">
-                  <li>
+                  <li className="MobileMenuItem">
                     <Link
                       to="/"
                       className="Text-Color MobileLink"
@@ -257,13 +219,59 @@ const Navigation = () => {
                       Home
                     </Link>
                   </li>
-                  <Link
-                    to="/ContactUs"
-                    className="Text-Color MobileLink"
-                    onClick={() => setNavMenuOpen(false)}
+                  <li className="MobileMenuItem">
+                    <Link
+                      to="/ContactUs"
+                      className="Text-Color MobileLink"
+                      onClick={() => setNavMenuOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li
+                    className="cs-li Text-Color Position-Relative MobileMenuItem"
+                    onMouseOver={() => setServiceMenuOpen(true)}
+                    onMouseLeave={() => setServiceMenuOpen(false)}
                   >
-                    Contact Us
-                  </Link>
+                    <a
+                      className="Text-Color nav-text"
+                      onClick={() =>
+                        setmobileServiceMenuOpen(!mobileServiceMenuOpen)
+                      }
+                    >
+                      Services
+                      <svg
+                        className="CollapseSubMenuSVG"
+                        width="15px"
+                        height="15px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+
+                    <div
+                      className={
+                        mobileServiceMenuOpen === true
+                          ? "MobileSubMenuContainerOpen"
+                          : "MobileSubMenuContainer"
+                      }
+                    >
+                      <ul className="MobileServiceSubMenuList">
+                        <li className="Color-White">
+                          <Link to="/SocialMediaAds">Social Media Ads</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>

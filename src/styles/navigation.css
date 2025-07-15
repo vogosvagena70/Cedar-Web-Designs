@@ -96,7 +96,7 @@ a{
 }
 
 .nav-text{
-    
+    font-size: 15px;
 }
 
 /* .cs-button-solid{
@@ -181,6 +181,10 @@ a{
 
 .Text-Color{
     color: var(--clr-text);
+}
+
+.Reverse-Text-Color{
+    color: var(--clr-text-reverse);
 }
 
 .SVG-Color{
@@ -363,4 +367,138 @@ a{
 
 .MobileLink{
     font-size: 15px !important;
+}
+
+.Position-Relative{
+    position: relative;
+}
+
+.SubNavMenu{
+    opacity: 0;
+    background-color: var(--clr-bg);
+    border-radius: 0.5rem;
+    position: absolute; 
+    min-width: 12rem;
+    min-height: 7rem;
+    padding-left: 10px;
+    padding-top: 40px;
+
+    border-bottom: 5px solid var(--clr-border);
+
+    transition-property: opacity,padding-top;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.SubNavMenu > *{
+    list-style: none;
+} 
+
+.SubNavMenuOpen{
+    opacity: 1;
+    background-color: var(--clr-bg);
+    border-radius: 0.5rem;
+    position: absolute; 
+    min-width: 12rem;
+    min-height: 7rem;
+    padding-top: 50px;
+    
+    border-bottom: 5px solid var(--clr-border);
+    
+    transition-property: opacity,padding-top;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.SubNavMenuOpen > *{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.SubMenuItem{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.SubMenuItem:hover{
+    background-color: #f7f7f7; 
+}
+
+.SubMenuItem:hover > *{
+    color: var(--clr-txt-hover); 
+
+    transition-property:color ;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.CollapseSubMenuSVG{
+    position: absolute;
+    fill: black;
+    top: 3px;
+} 
+
+.dark .CollapseSubMenuSVG{
+    position: absolute;
+    fill: white;
+    top: 3px;
+}
+
+.MobileSubMenuContainer{
+    display: none;
+    opacity: 0;
+    margin: 10px;
+    background-color: var(--clr-bg-secondary-price);
+    width:90%;
+    border-radius: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition-property: opacity,display;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.MobileSubMenuContainerOpen{
+    display: block;
+    opacity: 1;
+    margin: 10px;
+    background-color: var(--clr-bg-secondary-price);
+    width:90%;
+    border-radius: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition-property: opacity,display;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.dark .MobileSubMenuContainerOpen{
+    border: 1px solid white;
+        box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 14px 0px, rgba(67, 183, 255, 0.2) 0px 0px 49px 0px inset, rgba(67, 183, 255, 0.2) 0px 0px 14px 0px inset, rgba(67, 183, 255, 0.2) 0px 0px 54px 0px;
+}
+.MobileServiceSubMenuList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileMenuItem{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Color-White{
+    color: white;
 }
