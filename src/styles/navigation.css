@@ -379,9 +379,8 @@ a{
     border-radius: 0.5rem;
     position: absolute; 
     min-width: 12rem;
-    min-height: 7rem;
-    padding-left: 10px;
-    padding-top: 40px;
+    min-height: 7rem; 
+    padding-top: 50px;
 
     border-bottom: 5px solid var(--clr-border);
 
@@ -452,6 +451,7 @@ a{
 .MobileSubMenuContainer{
     display: none;
     opacity: 0;
+    transform: scale(0);
     margin: 10px;
     background-color: var(--clr-bg-secondary-price);
     width:90%;
@@ -459,23 +459,25 @@ a{
     padding-top: 10px;
     padding-bottom: 10px;
 
-    transition-property: opacity,display;
-    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-duration: 5s;
     transition-timing-function: ease-in;
 }
 
 .MobileSubMenuContainerOpen{
     display: block;
     opacity: 1;
+    transform: scale(1);
     margin: 10px;
-    background-color: var(--clr-bg-secondary-price);
-    width:90%;
+    background-color: var(--clr-bg-secondary-price); 
     border-radius: 0.5rem;
     padding-top: 10px;
     padding-bottom: 10px;
 
-    transition-property: opacity,display;
-    transition-duration: 0.5s;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: opacity;
+    transition-duration: 5s;
     transition-timing-function: ease-in;
 }
 

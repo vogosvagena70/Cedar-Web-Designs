@@ -14,6 +14,7 @@ import Check from "../components/Check";
 import BlueCheck from "../components/BlueCheck";
 import { useEffect, useState } from "react";
 import { preload } from "react-dom";
+import { Link } from "react-router";
 
 const Services1 = [
   {
@@ -51,7 +52,7 @@ const Services2 = [
     Title: "Social Media Ads",
     Body: "We also offer Pay-Per-Click Social Media ads creation and management with our Social Media Ads expert who can create effective ad campaigns to maximize your ROI.",
     LinkText: "More About Ads",
-    LinkURL: "",
+    LinkURL: "/SocialMediaAds",
     SVG: "ads",
   },
   {
@@ -73,7 +74,7 @@ const Home = () => {
       </title>
       <meta
         name="description"
-        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
+        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Social Media Ads services help small businesses grow and get more leads."
       ></meta>
       <link rel="canonical" href="https://www.cedarwebdesigns.com/" />
 
@@ -84,7 +85,7 @@ const Home = () => {
       />
       <meta
         property="og:description"
-        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Google Ads services help small businesses grow and get more leads."
+        content="We hand-code fast, responsive websites without page builders. Our expert SEO and Social Media Ads services help small businesses grow and get more leads."
       />
       <meta property="og:url" content="https://www.cedarwebdesigns.com/" />
 
@@ -156,7 +157,7 @@ const Home = () => {
                   No page builders or WordPress. We offer 100% hand-coded
                   websites with superior results starting at{" "}
                   {currency === "USD" ? "$150" : "₱8,500"}
-                  /mo as well as Google Ads and SEO services.
+                  /mo as well as Social Media Ads and SEO services.
                 </span>
               </div>
 
@@ -232,12 +233,14 @@ const Home = () => {
               <ul className="ListItemContainer">
                 {Services2.map((item) => {
                   return (
-                    <ServiceBox
-                      Body={item.Body}
-                      SVG={item.SVG}
-                      Title={item.Title}
-                      URL={item.LinkURL}
-                    />
+                    <Link to={item.LinkURL}>
+                      <ServiceBox
+                        Body={item.Body}
+                        SVG={item.SVG}
+                        Title={item.Title}
+                        URL={item.LinkURL}
+                      />
+                    </Link>
                   );
                 })}
               </ul>

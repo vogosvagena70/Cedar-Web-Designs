@@ -25,7 +25,16 @@ const NavigationLinkMenu = () => {
           stroke-linejoin="round"
         />
       </svg>
-      {serviceMenuOpen === true ? (
+      <ul
+        className={serviceMenuOpen === true ? "SubNavMenuOpen" : "SubNavMenu"}
+      >
+        <li className="SubMenuItem">
+          <Link to="/SocialMediaAds" className="Text-Color">
+            Social Media Ads
+          </Link>
+        </li>
+      </ul>
+      {/* {serviceMenuOpen === true ? (
         <ul className="SubNavMenuOpen">
           <li className="SubMenuItem">
             <Link to="/SocialMediaAds" className="Text-Color">
@@ -35,7 +44,7 @@ const NavigationLinkMenu = () => {
         </ul>
       ) : (
         ""
-      )}
+      )} */}
     </li>
   );
 };

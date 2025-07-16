@@ -77,7 +77,7 @@ const SocialMediaAds = () => {
               <h3 className="Text-Color">Our Process</h3>
               <p className="Text-Color Partial-Separator">
                 We implement a proven, structured approach to maximize the
-                performance of your Google Ads campaigns:
+                performance of your Social Media Ads campaigns:
               </p>
               <ul className="Separator pl-15">
                 <li className="Text-Color">
@@ -100,7 +100,7 @@ const SocialMediaAds = () => {
                   performance
                 </li>
               </ul>
-              <h2 className="Text-Color">Key Benefits of Our PPC Management</h2>
+              <h2 className="Text-Color">Key Benefits of Our Service</h2>
               <p className="Text-Color Partial-Separator">
                 Partnering with Cedar Web Designs for Social Media Ads
                 management means gaining access to:
@@ -126,10 +126,10 @@ const SocialMediaAds = () => {
               </ul>
               <h3 className="Text-Color">Boost Your Business with Experts</h3>
               <p className="Text-Color Separator">
-                Our PPC solutions are built to give you a competitive edge and
-                drive more leads. Whether your goal is boosting sales or growing
-                brand visibility, our experienced team is here to navigate the
-                ins and outs of Social Media Advertising for you.
+                Our solutions are built to give you a competitive edge and drive
+                more leads. Whether your goal is boosting sales or growing brand
+                visibility, our experienced team is here to navigate the ins and
+                outs of Social Media Advertising for you.
               </p>
               <h2 className="Text-Color">Get Started Today</h2>
               <p className="Text-Color">
