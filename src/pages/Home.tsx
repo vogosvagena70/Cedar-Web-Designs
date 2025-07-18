@@ -3,7 +3,7 @@ import "../styles/home.css";
 import "../styles/fontsizes.css";
 import mockup from "../assets/images/mockup.avif";
 import basselItani from "../assets/images/bassel-itani.avif";
-import Chezka from "../assets/images/chezka.avif";
+import Tarek from "../assets/images/Tarek.jpeg";
 import Hicham from "../assets/images/hicham.jpeg";
 import Ibrahim from "../assets/images/ibrahim.jpeg";
 import ServiceBox from "../components/ServiceBox";
@@ -729,10 +729,10 @@ const Home = () => {
               <div className="ReviewItem">
                 <img
                   className="ReviewImg"
-                  src={Chezka}
+                  src={Tarek}
                   width={150}
                   height={150}
-                  alt="Image of Chezka"
+                  alt="Image of Tarek"
                 ></img>
                 <div className="ReviewTextContainer">
                   <span className="ReviewReview  Text-Color">
@@ -741,7 +741,7 @@ const Home = () => {
                     and quick responses made all the difference. I highly
                     recommend his services.
                   </span>
-                  <h1 className="Reviewer Text-Color">Chezka Kae</h1>
+                  <h1 className="Reviewer Text-Color">Tarek Nomairy</h1>
                 </div>
               </div>
               <div className="ReviewItem">
