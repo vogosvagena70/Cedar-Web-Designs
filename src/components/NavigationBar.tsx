@@ -7,10 +7,11 @@ const NavigationBar = () => {
         <li className="cs-li">
           <NavigationLink Href="/" Text="Home" />
         </li>
+
+        <NavigationLinkMenu />
         <li className="cs-li">
           <NavigationLink Href="/ContactUs" Text="Contact us" />
         </li>
-        <NavigationLinkMenu />
       </ul>
     </div>
   );

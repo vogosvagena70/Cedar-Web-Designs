@@ -219,15 +219,7 @@ const Navigation = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="MobileMenuItem">
-                    <Link
-                      to="/ContactUs"
-                      className="Text-Color MobileLink"
-                      onClick={() => setNavMenuOpen(false)}
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
+
                   <li
                     className="cs-li Text-Color Position-Relative MobileMenuItem"
                     onMouseOver={() => setServiceMenuOpen(true)}
@@ -271,6 +263,15 @@ const Navigation = () => {
                         </li>
                       </ul>
                     </div>
+                  </li>
+                  <li className="MobileMenuItem">
+                    <Link
+                      to="/ContactUs"
+                      className="Text-Color MobileLink"
+                      onClick={() => setNavMenuOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </div>
