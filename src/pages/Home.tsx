@@ -233,7 +233,7 @@ const Home = () => {
               <ul className="ListItemContainer">
                 {Services2.map((item) => {
                   return (
-                    <Link to={item.LinkURL}>
+                    <Link to={item.LinkURL} style={{ all: "unset" }}>
                       <ServiceBox
                         Body={item.Body}
                         SVG={item.SVG}

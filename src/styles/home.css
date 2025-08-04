@@ -432,7 +432,7 @@ margin-right: auto;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 
-     
+     list-style: none;
 }
 
 .ItemHover{
@@ -1369,3 +1369,5 @@ position: relative;
 .OwnderDeveloper{
     font-size: clamp(0.8rem,4vw,1.25rem);
 }
+
+ 
