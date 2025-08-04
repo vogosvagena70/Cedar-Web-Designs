@@ -68,9 +68,9 @@ const Footer = () => {
                 <div>
                   <a
                     className="FooterContactUnits"
-                    href="mailto:mhd.bassel.a70@gmail.com"
+                    href="mailto:support@cedarwebdesigns.com"
                   >
-                    mhd.bassel.a70@gmail.com
+                    support@cedarwebdesigns.com
                   </a>
                 </div>
               </div>
