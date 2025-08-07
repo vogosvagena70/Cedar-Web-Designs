@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router";
-const NavigationLinkMenu = () => {
+import type { NavMenu } from "../types/NavMenu";
+interface NavigationLinkMenuProps {
+  Menu: NavMenu;
+}
+
+const NavigationLinkMenu = (props: NavigationLinkMenuProps) => {
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   return (
     <li
@@ -8,7 +13,7 @@ const NavigationLinkMenu = () => {
       onMouseOver={() => setServiceMenuOpen(true)}
       onMouseLeave={() => setServiceMenuOpen(false)}
     >
-      <a className="Text-Color nav-text">Services</a>
+      <a className="Text-Color nav-text">{props.Menu.Name}</a>
       <svg
         className="CollapseSubMenuSVG"
         width="15px"
@@ -29,9 +34,11 @@ const NavigationLinkMenu = () => {
         className={serviceMenuOpen === true ? "SubNavMenuOpen" : "SubNavMenu"}
       >
         <li className="SubMenuItem">
-          <Link to="/SocialMediaAds" className="Text-Color">
-            Social Media Ads
-          </Link>
+          {props.Menu.SubMenus.map((value) => (
+            <Link to="/SocialMediaAds" className="Text-Color">
+              {value.Name}
+            </Link>
+          ))}
         </li>
       </ul>
       {/* {serviceMenuOpen === true ? (

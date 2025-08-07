@@ -219,7 +219,6 @@ const Navigation = () => {
                       Home
                     </Link>
                   </li>
-
                   <li
                     className="cs-li Text-Color Position-Relative MobileMenuItem"
                     onMouseOver={() => setServiceMenuOpen(true)}
@@ -259,7 +258,67 @@ const Navigation = () => {
                     >
                       <ul className="MobileServiceSubMenuList">
                         <li className="Color-White">
-                          <Link to="/SocialMediaAds">Social Media Ads</Link>
+                          <Link
+                            to="/SocialMediaAds"
+                            onClick={() => {
+                              setNavMenuOpen(false);
+                              setmobileServiceMenuOpen(false);
+                            }}
+                          >
+                            Social Media Ads
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    className="cs-li Text-Color Position-Relative MobileMenuItem"
+                    onMouseOver={() => setServiceMenuOpen(true)}
+                    onMouseLeave={() => setServiceMenuOpen(false)}
+                  >
+                    <a
+                      className="Text-Color nav-text"
+                      onClick={() =>
+                        setmobileServiceMenuOpen(!mobileServiceMenuOpen)
+                      }
+                    >
+                      Services
+                      <svg
+                        className="CollapseSubMenuSVG"
+                        width="15px"
+                        height="15px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+
+                    <div
+                      className={
+                        mobileServiceMenuOpen === true
+                          ? "MobileSubMenuContainerOpen"
+                          : "MobileSubMenuContainer"
+                      }
+                    >
+                      <ul className="MobileServiceSubMenuList">
+                        <li className="Color-White">
+                          <Link
+                            to="/SocialMediaAds"
+                            onClick={() => {
+                              setNavMenuOpen(false);
+                              setmobileServiceMenuOpen(false);
+                            }}
+                          >
+                            Social Media Ads
+                          </Link>
                         </li>
                       </ul>
                     </div>

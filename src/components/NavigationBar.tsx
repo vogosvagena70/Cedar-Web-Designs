@@ -1,5 +1,11 @@
 import NavigationLink from "./NavigationLink";
 import NavigationLinkMenu from "./NavigationLinkMenu";
+import type { NavMenu } from "../types/NavMenu";
+
+const menus: NavMenu[] = [
+  // { Name: "About us", SubMenus: [{ Name: "About us" }] },
+  { Name: "Services", SubMenus: [{ Name: "Social Media Ads" }] },
+];
 const NavigationBar = () => {
   return (
     <div className="ulContainer">
@@ -8,7 +14,9 @@ const NavigationBar = () => {
           <NavigationLink Href="/" Text="Home" />
         </li>
 
-        <NavigationLinkMenu />
+        {menus.map((value) => (
+          <NavigationLinkMenu Menu={value} />
+        ))}
         <li className="cs-li">
           <NavigationLink Href="/ContactUs" Text="Contact us" />
         </li>
