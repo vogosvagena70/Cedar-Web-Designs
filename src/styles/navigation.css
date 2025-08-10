@@ -17,7 +17,7 @@
     border-radius: 1.5rem; 
     align-items: center;
     margin-top: 20px;
-    width: 94%;
+    width: 90%;
     height: 4rem;
     color: white;
     /* background-color: #080c1c; */
@@ -27,7 +27,7 @@
     padding-left: 24px;
     z-index: 9999;
 
-    transition-property: width,margin-top,align-items,border-radius,height;
+    transition-property: padding-left,padding-bottom,padding-top,width,margin-top,align-items,border-radius,height;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 
