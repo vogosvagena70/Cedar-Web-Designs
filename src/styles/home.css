@@ -393,7 +393,7 @@ margin-right: auto;
 .ListItemContainer{
     display: flex;
     gap: 2rem;
-
+    list-style: none;
     @media (max-width: 777px) {
         flex-direction: column;
         gap:5rem
@@ -1126,8 +1126,7 @@ position: relative;
     transform: rotate(-40deg);
     animation: MeteorShower 9s infinite ease-in-out;
     animation-duration: 9s;
-    animation-delay: 1s;
-
+    animation-delay: 0.3s;
     @media (max-width: 500px) {
         transform: rotate(-10deg);
     }
@@ -1161,7 +1160,7 @@ position: relative;
     transform: rotate(-50deg);
     animation: MeteorShower2 9s infinite ease-in-out;
     animation-duration: 8s;
-    animation-delay: 1.2s;
+    animation-delay: 1s;
 
     @media (max-width: 500px) {
         transform: rotate(-22deg);

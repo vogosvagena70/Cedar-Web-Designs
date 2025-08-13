@@ -15,6 +15,7 @@ import BlueCheck from "../components/BlueCheck";
 import { useEffect, useState } from "react";
 import { preload } from "react-dom";
 import { Link } from "react-router";
+import { useSystemTheme } from "../hooks/useSystemTheme";
 
 const Services1 = [
   {
@@ -225,6 +226,7 @@ const Home = () => {
                       SVG={item.SVG}
                       Title={item.Title}
                       URL={item.LinkURL}
+                      key={item.Title}
                     />
                   );
                 })}
@@ -233,7 +235,11 @@ const Home = () => {
               <ul className="ListItemContainer">
                 {Services2.map((item) => {
                   return (
-                    <Link to={item.LinkURL} style={{ all: "unset" }}>
+                    <Link
+                      to={item.LinkURL}
+                      style={{ all: "unset" }}
+                      key={item.Title}
+                    >
                       <ServiceBox
                         Body={item.Body}
                         SVG={item.SVG}

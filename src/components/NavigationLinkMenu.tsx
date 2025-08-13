@@ -9,6 +9,7 @@ const NavigationLinkMenu = (props: NavigationLinkMenuProps) => {
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   return (
     <li
+      key={props.Menu.Name}
       className="cs-li Text-Color Position-Relative"
       onMouseOver={() => setServiceMenuOpen(true)}
       onMouseLeave={() => setServiceMenuOpen(false)}
@@ -22,20 +23,14 @@ const NavigationLinkMenu = (props: NavigationLinkMenuProps) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M7 10L12 15L17 10"
-          stroke="#000000"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
+        <path d="M7 10L12 15L17 10" stroke="#000000" />
       </svg>
       <ul
         className={serviceMenuOpen === true ? "SubNavMenuOpen" : "SubNavMenu"}
       >
         <li className="SubMenuItem">
           {props.Menu.SubMenus.map((value) => (
-            <Link to="/SocialMediaAds" className="Text-Color">
+            <Link to="/SocialMediaAds" className="Text-Color" key={value.Name}>
               {value.Name}
             </Link>
           ))}

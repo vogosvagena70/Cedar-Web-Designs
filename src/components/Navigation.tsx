@@ -8,6 +8,7 @@ import NewCedarWhiteLogo from "../assets/images/Logo/NewCedarWhitePNG.png";
 import ButtonSolid from "./ButtonSolid";
 import { Link } from "react-router";
 import NavigationBar from "./NavigationBar";
+import { useSystemTheme } from "../hooks/useSystemTheme";
 
 const Navigation = () => {
   const [scrolledPass100, setScrolledPass100] = useState(false);
@@ -15,6 +16,13 @@ const Navigation = () => {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   const [mobileServiceMenuOpen, setmobileServiceMenuOpen] = useState(false);
+  const systemTheme = useSystemTheme();
+
+  useEffect(() => {
+    setTheme(systemTheme);
+    localStorage.setItem("selectedTheme", systemTheme);
+    document.body.classList = systemTheme;
+  }, [systemTheme]);
 
   const ToggleTheme = () => {
     document.body.classList = "";
@@ -57,9 +65,8 @@ const Navigation = () => {
         >
           <div className="container">
             <Link to="/" aria-label="Link to #HeroSection">
-              <a
+              <picture
                 className="LogoContainer"
-                href="#HeroSection"
                 data-name="LogoContainer"
                 id="LogoContainer"
                 aria-label="Link to #HeroSection"
@@ -94,7 +101,7 @@ const Navigation = () => {
                   <span>r</span> <span>D</span> <span>a</span> <span>r</span>{" "}
                   <span>k</span>
                 </div>
-              </a>
+              </picture>
             </Link>
 
             <nav className="NavBar">
@@ -181,20 +188,20 @@ const Navigation = () => {
                     <path
                       d="M4 18L20 18"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
                     />
                     <path
                       d="M4 12L20 12"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
                     />
                     <path
                       d="M4 6L20 6"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </div>
@@ -243,7 +250,7 @@ const Navigation = () => {
                           d="M7 10L12 15L17 10"
                           stroke="#000000"
                           stroke-width="1.5"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>

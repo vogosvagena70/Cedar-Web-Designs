@@ -15,7 +15,7 @@ const NavigationBar = () => {
         </li>
 
         {menus.map((value) => (
-          <NavigationLinkMenu Menu={value} />
+          <NavigationLinkMenu Menu={value} key={value.Name} />
         ))}
         <li className="cs-li">
           <NavigationLink Href="/ContactUs" Text="Contact us" />
