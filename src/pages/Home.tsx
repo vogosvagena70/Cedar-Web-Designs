@@ -15,7 +15,6 @@ import BlueCheck from "../components/BlueCheck";
 import { useEffect, useState } from "react";
 import { preload } from "react-dom";
 import { Link } from "react-router";
-import { useSystemTheme } from "../hooks/useSystemTheme";
 
 const Services1 = [
   {
