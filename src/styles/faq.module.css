@@ -1429,7 +1429,11 @@ position: relative;
     display: block;
     position: relative; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    @media (max-width: 500px) {
+        width: 35ch;
+        font-size: 0.8rem;
+    }
 }
 
 .Answer{
