@@ -5,4 +5,5 @@ export interface NavMenu {
 
 interface SubMenus {
   Name: string;
+  Href: string;
 }

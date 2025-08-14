@@ -30,7 +30,7 @@ const NavigationLinkMenu = (props: NavigationLinkMenuProps) => {
       >
         <li className="SubMenuItem">
           {props.Menu.SubMenus.map((value) => (
-            <Link to="/SocialMediaAds" className="Text-Color" key={value.Name}>
+            <Link to={value.Href} className="Text-Color" key={value.Name}>
               {value.Name}
             </Link>
           ))}

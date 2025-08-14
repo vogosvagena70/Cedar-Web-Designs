@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
+import FAQ from "./pages/FAQ";
 // import SocialMediaAds from "./pages/SocialMediaAds";
 
 const SocialMediaAds = lazy(() => import("./pages/SocialMediaAds"));
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/ContactUs" element={<ContactUs />}></Route>
             <Route path="/SocialMediaAds" element={<SocialMediaAds />}></Route>
+            <Route path="/faq" element={<FAQ />}></Route>
           </Routes>
         </Suspense>
         <Footer />

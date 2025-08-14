@@ -3,8 +3,11 @@ import NavigationLinkMenu from "./NavigationLinkMenu";
 import type { NavMenu } from "../types/NavMenu";
 
 const menus: NavMenu[] = [
-  // { Name: "About us", SubMenus: [{ Name: "About us" }] },
-  { Name: "Services", SubMenus: [{ Name: "Social Media Ads" }] },
+  { Name: "About us", SubMenus: [{ Name: "FAQ", Href: "faq" }] },
+  {
+    Name: "Services",
+    SubMenus: [{ Name: "Social Media Ads", Href: "socialmediaads" }],
+  },
 ];
 const NavigationBar = () => {
   return (
