@@ -1463,7 +1463,13 @@ position: relative;
 }
 
 .FAQList{
-border: 1px solid #fff;
+    border: 1px solid #fff;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 16px;
+    border-radius: 1rem;
+}
+
+:global(.dark) .FAQList{
+    border: 1px solid #fff;
     box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 14px, inset rgba(67, 183, 255, 0.2) 0px 0px 10px, inset rgba(67, 183, 255, 0.2) 0px 0px 25px, rgba(67, 183, 255, 0.2) 0px 0px 25px;
     border-radius: 1rem;
 }
