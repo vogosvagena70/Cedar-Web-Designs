@@ -9,15 +9,25 @@ import ButtonSolid from "./ButtonSolid";
 import { Link } from "react-router";
 import NavigationBar from "./NavigationBar";
 import { useSystemTheme } from "../hooks/useSystemTheme";
+import NavigationMobileLinkMenu from "./NavigationMobileLinkMenu";
+import type { NavMenu } from "../types/NavMenu";
 
 const Navigation = () => {
+  const menus: NavMenu[] = [
+    { Name: "About us", SubMenus: [{ Name: "FAQ", Href: "faq" }] },
+    {
+      Name: "Services",
+      SubMenus: [{ Name: "Social Media Ads", Href: "socialmediaads" }],
+    },
+  ];
   const [scrolledPass100, setScrolledPass100] = useState(false);
   const [theme, setTheme] = useState("light");
   const [navMenuOpen, setNavMenuOpen] = useState(false);
-  const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
-  const [mobileServiceMenuOpen, setmobileServiceMenuOpen] = useState(false);
   const systemTheme = useSystemTheme();
 
+  const CloseMobileMenu = () => {
+    setNavMenuOpen(false);
+  };
   useEffect(() => {
     setTheme(systemTheme);
     localStorage.setItem("selectedTheme", systemTheme);
@@ -56,7 +66,6 @@ const Navigation = () => {
 
   return (
     <>
-      {serviceMenuOpen ? "" : ""}
       <div className="HeaderContainer">
         <div
           className={
@@ -226,58 +235,12 @@ const Navigation = () => {
                       Home
                     </Link>
                   </li>
-                  <li
-                    className="cs-li Text-Color Position-Relative MobileMenuItem"
-                    onMouseOver={() => setServiceMenuOpen(true)}
-                    onMouseLeave={() => setServiceMenuOpen(false)}
-                  >
-                    <a
-                      className="Text-Color nav-text"
-                      onClick={() =>
-                        setmobileServiceMenuOpen(!mobileServiceMenuOpen)
-                      }
-                    >
-                      Services
-                      <svg
-                        className="CollapseSubMenuSVG"
-                        width="15px"
-                        height="15px"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7 10L12 15L17 10"
-                          stroke="#000000"
-                          stroke-width="1.5"
-                          strokeLinecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-
-                    <div
-                      className={
-                        mobileServiceMenuOpen === true
-                          ? "MobileSubMenuContainerOpen"
-                          : "MobileSubMenuContainer"
-                      }
-                    >
-                      <ul className="MobileServiceSubMenuList">
-                        <li className="Color-White">
-                          <Link
-                            to="/SocialMediaAds"
-                            onClick={() => {
-                              setNavMenuOpen(false);
-                              setmobileServiceMenuOpen(false);
-                            }}
-                          >
-                            Social Media Ads
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
+                  {menus.map((value) => (
+                    <NavigationMobileLinkMenu
+                      item={value}
+                      CloseMobileMenu={CloseMobileMenu}
+                    />
+                  ))}
                   <li className="MobileMenuItem">
                     <Link
                       to="/ContactUs"
