@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Universe from "../components/Universe";
 import Filler from "../components/Filler";
 import Wave from "../components/Wave";
-import Chezka from "../assets/images/Chezka-Social-Media-Ads.jpeg";
+import Chezka from "../assets/images/Chezka-Social-Media-Ads.avif";
 import ButtonSolid from "../components/ButtonSolid";
 const SocialMediaAds = () => {
   useEffect(() => {
