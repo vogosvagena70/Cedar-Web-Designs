@@ -36,17 +36,6 @@ const NavigationLinkMenu = (props: NavigationLinkMenuProps) => {
           ))}
         </li>
       </ul>
-      {/* {serviceMenuOpen === true ? (
-        <ul className="SubNavMenuOpen">
-          <li className="SubMenuItem">
-            <Link to="/SocialMediaAds" className="Text-Color">
-              Social Media Ads
-            </Link>
-          </li>
-        </ul>
-      ) : (
-        ""
-      )} */}
     </li>
   );
 };

@@ -435,6 +435,7 @@ margin-right: auto;
 
 .Item{
     /* background-color: #f7f7f7;  */
+    cursor: pointer;
     background-color: var(--clr-AboutUs);
     border-radius: 1rem;
     block-size: 350px;  
@@ -447,6 +448,7 @@ margin-right: auto;
 }
 
 .ItemHover{
+    cursor: pointer;
     background-color: #f7f7f7; 
     border-radius: 1rem;
     block-size: 350px;  
