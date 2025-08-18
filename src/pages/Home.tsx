@@ -13,7 +13,6 @@ import SentientLaptopMobile from "../assets/images/Portfolio/Sentient/Sentient-L
 import Check from "../components/Check";
 import { useEffect, useState } from "react";
 import { preload } from "react-dom";
-import { Link } from "react-router";
 import Pricing from "../components/Pricing/Pricing";
 import PricingPH from "../components/Pricing/PricingPH";
 
