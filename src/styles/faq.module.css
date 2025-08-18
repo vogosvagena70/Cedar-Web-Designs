@@ -1232,8 +1232,7 @@ position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     @media (max-width: 1300px) {
-        flex-direction: column;
-        gap:10rem;
+        flex-direction: column; 
         align-items: center;
         margin-left:10px;
         margin-right:10px;
@@ -1431,7 +1430,7 @@ position: relative;
     display: flex;
     justify-content: space-between; 
     @media (max-width: 500px) {
-        width: 35ch;
+        width: 50ch;
         font-size: 0.8rem;
     }
 }
@@ -1489,3 +1488,30 @@ position: relative;
     flex-direction: column;
     gap: 2rem;
 }
+
+.FAQSelectContainer{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.FAQSelectBox{
+    border: 1px var(--clr-text) solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    
+}
+
+.FAQSelectBox.Active{
+    background-color: #e5e8eb;
+    color: black;
+}
+
+:global(.dark) .FAQSelectBox.Active{
+    background-color: var(--clr-text);
+    color: black;
+        box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px 0px, rgba(67, 183, 255, 0.2) 0px 0px 39px 0px, rgba(67, 183, 255, 0.2) 0px 0px 54px 0px, rgba(67, 183, 255, 0.2) 0px 0px 74px 0px;
+}
+

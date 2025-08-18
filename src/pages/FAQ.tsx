@@ -1,14 +1,21 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import faqStyle from "../styles/faq.module.css";
 import "../styles/fontsizes.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Universe from "../components/Universe";
 import Wave from "../components/Wave";
 import Question from "../components/Question";
 import type { FAQItem } from "../types/FAQItem";
+import FAQSelector from "../components/FAQ/FAQSelector";
 
 const FAQ = () => {
-  const faqItems: FAQItem[] = [
+  const [selectedFAQ, setSelectedFAQ] = useState(1);
+
+  const handleSetSelectedFAQ = (index: number) => {
+    setSelectedFAQ(index);
+  };
+
+  const PricingFAQItems: FAQItem[] = [
     {
       Question: "How long does the subscription last?",
       Answer:
@@ -39,6 +46,29 @@ const FAQ = () => {
       Question: "Are there refunds?",
       Answer:
         "When you sign a contract, either lump sum or subscription, if we cannot design something you are 100% happy with and no longer want to move forward, then we will refund whatever you paid to get started. If we do end up moving forward with building the site, there are no refunds after that point. From then on, refunds are at our discretion.",
+    },
+  ];
+
+  const websitesFAQItems: FAQItem[] = [
+    {
+      Question: "How long does the process take from start to finish?",
+      Answer:
+        "We generally finish a website from start to finish within 2-4 weeks and is all dependent on how soon clients respond to our content and image requests as well as the availability of our designers and developers. Sometimes it can be 2 weeks, sometimes 3.",
+    },
+    {
+      Question: "Do we own our domain?",
+      Answer:
+        "Yes. We don’t take hostages. Even if we bought the domain for you, when you cancel your subscription with us we transfer the domain to you.",
+    },
+    {
+      Question: "Do you use Wordpress or any builders?",
+      Answer:
+        "Nope! Everything we make is built with custom hand written code. No page builders here. That is what separates us from the others - we put the time and effort to do things differently and it shows in our work and our clients online presence after launch.",
+    },
+    {
+      Question: "Why custom code over Wordpress? What are the advantages?",
+      Answer:
+        "Security, load times, maintainability, lower costs, easier to customize, less bloat because we don’t need plugins for everything, we never need to update anything like you need to constantly update your Wordpress version otherwise you get hacked and your site redirects to a Chinese gambling site, and we're more responsive. To go into more detail about security, our custom coded sites have no databases or anything so there’s nothing to hack. Our sites are more secure without needing constant updates to be on top of or constant attacks from online hackers trying to barge in. Theres nowhere for them to barge into on our sites no matter how hard they try.",
     },
   ];
   useEffect(() => {
@@ -92,10 +122,17 @@ const FAQ = () => {
                 </span>
               </div>
             </div>
+            <FAQSelector
+              handleSetSelectedFAQ={handleSetSelectedFAQ}
+              selectedFAQ={selectedFAQ}
+            />
             <div className={`${faqStyle.FAQListContainer}`}>
-              {faqItems.map((value) => (
-                <Question item={value} />
-              ))}
+              {selectedFAQ === 1
+                ? PricingFAQItems.map((value) => <Question item={value} />)
+                : ""}
+              {selectedFAQ === 2
+                ? websitesFAQItems.map((value) => <Question item={value} />)
+                : ""}
             </div>
           </div>
         </div>
