@@ -1,9 +1,11 @@
+import WaveStyle from "../styles/wave.module.css";
+
 const Wave = () => {
   return (
     <>
       <div style={{ position: "relative" }}>
         <svg
-          className="cs-wave desktop"
+          className={WaveStyle.CsWave}
           fill="none"
           viewBox="0 0 1920 136"
           xmlns="http://www.w3.org/2000/svg"
