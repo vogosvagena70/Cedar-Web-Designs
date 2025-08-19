@@ -137,28 +137,10 @@ z-index: 2;
 }
  
 
-.Hero{
-    max-width: 500px;
-    z-index: 99;
-}
-
-.hero-text-container{ 
-    margin-top: 1rem;
-}
-
-.hero-text{
-
-}
-
-.hero-top{
-    font-weight: 700;
-}
-
-.test-container{
-    display: flex;
-    max-width: 80rem;
-    margin:auto;
-} 
+ 
+ 
+ 
+ 
 
 .ServiceWrapper{
     margin-top: -1px;
