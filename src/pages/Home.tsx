@@ -69,9 +69,7 @@ const Home = () => {
   preload(mockup, { as: "image" });
   return (
     <>
-      <title>
-        Cedar Web Designs | Small Business Web Designer | $0 Down $150 Per Month
-      </title>
+      <title>Cedar Web Designs | Small Business Web Designer</title>
       <meta
         name="description"
         content="We hand-code fast, responsive websites without page builders. Our expert SEO and Social Media Ads services help small businesses grow and get more leads."
@@ -81,7 +79,7 @@ const Home = () => {
       {/* Open Graph Tags (Facebook, LinkedIn, etc.) */}
       <meta
         property="og:title"
-        content="Cedar Web Designs | Small Business Web Designer | $0 Down $150 Per Month"
+        content="Cedar Web Designs | Small Business Web Designer"
       />
       <meta
         property="og:description"
