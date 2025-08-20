@@ -1,0 +1,29 @@
+.Filler{
+    width: 100%;
+    height: 300px;
+    background-color: var(--clr-foreground);
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px; 
+
+    @media (max-width: 500px) {
+        height: 200px;
+        
+    } 
+}
+
+.FillerTitle{
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    z-index: 5;
+
+}
+
+.ColorWhite{
+    color: white;
+}

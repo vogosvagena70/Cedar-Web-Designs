@@ -1,0 +1,309 @@
+.dark .Meteor1{
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    top:  -13%;
+    right: 70%;
+    background-color: white;
+    transform: rotate(-40deg);
+    animation: MeteorShower 9s infinite ease-in-out;
+    animation-duration: 9s;
+    animation-delay: 1s;
+
+    @media (max-width: 500px) {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes MeteorShower {
+  0% {
+    top: -13%;
+    right: 90%;
+  }
+  2%{
+    opacity: 0;
+    top: 90%;
+    right: 40%;
+  }
+  86%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dark .Meteor2{
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    top: -20%;
+    right: 90%;
+    background-color: white;
+    transform: rotate(-50deg);
+    animation: MeteorShower2 9s infinite ease-in-out;
+    animation-duration: 8s;
+    animation-delay: 1.2s;
+
+    @media (max-width: 500px) {
+        transform: rotate(-22deg);
+    }
+}
+
+@keyframes MeteorShower2 {
+  0% {
+    top: -13%;
+    right: 80%;
+  }
+  2%{
+    opacity: 0;
+    top: 90%;
+    right: 10%;
+  }
+  86%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+} 
+
+
+.Universe1{
+    position: absolute;
+    width: 100%;
+    height: 50%; 
+    top: 0% !important;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.Universe2{
+    position: absolute;
+    width: 100%;
+    height: 50%; 
+    top: 32% !important;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.Universe3{
+    position: absolute;
+    width: 100%;
+    height: 40%; 
+    top: 53% !important;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+.Universe4{
+    position: absolute;
+    width: 100%;
+    height: 40%; 
+    top: 5% !important;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+@keyframes slideX {
+  0% {
+    opacity: 5%;
+  }
+  50% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 5%;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    opacity: 5%;
+  }
+  50% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 5%;
+  }
+}
+
+.dark .TestAnimation1{ 
+    width: 2px;
+  height: 2px;
+  top: 30%;
+  left: 3%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 7s infinite ease-in-out;
+  animation-delay: 0.3s;
+}
+.dark .TestAnimation2{  
+    width: 2px;
+  height: 2px;
+  top: 30%;
+  left: 50%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 8s infinite ease-in-out;
+  animation-delay: 1.2s;
+}
+.dark .TestAnimation3{ 
+    width: 2px;
+  height: 2px;
+  top: 60%;
+  left: 45%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 9s infinite ease-in-out;
+  animation-delay: 0.4s;
+}
+.dark .TestAnimation4{ 
+    width: 2px;
+  height: 2px;
+  top: 20%;
+  left: 30%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 5s infinite ease-in-out;
+  animation-delay: 1s;
+}
+.dark .TestAnimation5{ 
+    width: 2px;
+  height: 2px;
+  top: 25%;
+  left: 60%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 6.9s infinite ease-in-out;
+  animation-delay: 0s;
+}
+.dark .TestAnimation6{ 
+    width: 2px;
+  height: 2px;
+  top: 20%;
+  left: 90%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 4.5s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation7{ 
+    width: 2px;
+  height: 2px;
+  top: 35%;
+  left:20%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 6.5s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation7{ 
+    width: 2px;
+  height: 2px;
+  top: 50%;
+  left:5%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 5s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation8{ 
+    width: 2px;
+  height: 2px;
+  top: 44%;
+  left:44%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 10s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation9{ 
+    width: 2px;
+  height: 2px;
+  top: 34%;
+  left:34%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 7s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation10{ 
+    width: 2px;
+  height: 2px;
+  top: 32%;
+  left:14%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 3s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation11{ 
+    width: 2px;
+  height: 2px;
+  top: 30%;
+  left:80%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 9s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+.dark .TestAnimation12{ 
+    width: 2px;
+  height: 2px;
+  top: 44%;
+  left:85%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slideX 4s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.dark .TestAnimation13{ 
+    width: 2px;
+  height: 2px;
+  top: 32%;
+  left:96%;
+  opacity: 0%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: slide2 6s infinite ease-in-out;
+  animation-delay: 0.5s;
+}

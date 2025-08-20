@@ -11,6 +11,7 @@
 .color-white{
     color: white;
 }
+
 .ColorWhite{
     color: white;
 }
@@ -149,28 +150,10 @@ z-index: 2;
 }
  
 
-.Hero{
-    max-width: 500px;
-    z-index: 99;
-}
-
-.hero-text-container{ 
-    margin-top: 1rem;
-}
-
-.hero-text{
-
-}
-
-.hero-top{
-    font-weight: 700;
-}
-
-.test-container{
-    display: flex;
-    max-width: 80rem;
-    margin:auto;
-} 
+ 
+ 
+ 
+ 
 
 .ServiceWrapper{
     margin-top: -1px;
@@ -207,14 +190,7 @@ z-index: 2;
     right: 0;
     bottom: 0;
 }
-.CsWave{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -395;
-    right: 0;
-    bottom: 0;
-}
+/* test */
 
 .pt-1{
     padding-top: 10px;
@@ -805,6 +781,7 @@ min-width: 40%;
 .Text-Color{
     color: var(--clr-text);
 }
+
 .TextColor{
     color: var(--clr-text);
 }
@@ -1405,7 +1382,7 @@ min-width: 40%;
 .Partial-Separator{
     margin-bottom: 40px;
 }
-.PartialSeparator{
+.PartialSeperator{
     margin-bottom: 40px;
 }
 
