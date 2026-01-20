@@ -201,10 +201,10 @@ const ContactUs = () => {
                       <h2 className="Text-Color">PHONE</h2>
                       <span className="">
                         <a
-                          href="tel:+639060672336"
+                          href="tel:+639564096706"
                           className="FooterContactUnits Text-Color"
                         >
-                          +63 (9) 060672336
+                          +63 (9) 564096706
                         </a>
                       </span>
                     </div>
@@ -228,10 +228,10 @@ const ContactUs = () => {
                       <h2 className="Text-Color">Email</h2>
                       <span className="Text-Color">
                         <a
-                          href="mailto:mhd.bassel.a70@gmail.com"
+                          href="mailto:support@cedarwebdesigns.com"
                           className="FooterContactUnits Text-Color"
                         >
-                          mhd.bassel.a70@gmail.com
+                          support@cedarwebdesigns.com
                         </a>
                       </span>
                     </div>
